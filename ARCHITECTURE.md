@@ -2,10 +2,14 @@
 
 ## Overview
 
-The site is a single static HTML file (`index.html`) with an inline
+The main site is a single static HTML file (`index.html`) with an inline
 `<style>` block, inline SVG graphics, and a small inline `<script>` at the
 end of the body. There are no external JS dependencies, no build tooling,
 and no server-side component — it is served as-is by GitHub Pages.
+
+Four standalone legal pages (`privacy.html`, `terms.html`,
+`refund-policy.html`, `tax-exemption.html`) live alongside it — see
+"Legal pages" below.
 
 ## Styling
 
@@ -71,13 +75,34 @@ client-side behavior:
   `.stat-num` elements from 0 to their `data-count` value over 1.4s when
   they become 50% visible, formatting with `toLocaleString('en-IN')`.
 
+## Legal pages
+
+`privacy.html`, `terms.html`, `refund-policy.html`, and `tax-exemption.html`
+are standalone bilingual HTML pages, each duplicating a slimmed-down subset
+of `index.html`'s CSS (fonts, color variables, a simple header with a
+"Back to Home" link, and a matching footer) rather than sharing a linked
+stylesheet — kept deliberately simple/self-contained rather than factoring
+out shared CSS, to avoid touching the live `index.html` styling when
+editing legal copy. They're linked from `index.html`'s footer "Legal"
+column.
+
+Content was adapted from `Disclaimer_information.docx` (80G tax note,
+Privacy Policy, Terms & Conditions, all originally bundled in one doc) and
+`Relative-Definition.docx` (Section 13 "relative"/"specified person"
+definitions, used in `tax-exemption.html` to support the >₹50,000 donor
+disclosure requirement). The source `.docx` had been copied from a
+different NGO's template and referenced that NGO's Delhi office/domain —
+all four pages now use this foundation's actual Haridwar registered
+address and Haridwar/Uttarakhand jurisdiction instead.
+
 ## Assets
 
 - `index.html` — the entire site
 - `maharshi-dayanand-saraswati.jpg`, `om.jpeg` — images referenced by the page
 - `uddeshya.pdf` — source document for the objectives/activities content
-- `Disclaimer_information.docx`, `Relative-Definition.docx` — supporting
-  reference documents (not part of the deployed site)
+- `Disclaimer_information.docx`, `Relative-Definition.docx` — source
+  documents the four legal pages were adapted from (not directly deployed,
+  but their content now lives in the site)
 - `voucher.jpeg`, `DNS.jpeg` — reference screenshots (domain purchase, etc.),
   not part of the deployed site
 
@@ -96,7 +121,9 @@ expected and not a bug.
   - `A` records for `@` → GitHub Pages IPs
     (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`)
   - `CNAME` record for `www` → `utpalpriyadarshi.github.io`
-- **HTTPS:** enforced automatically by GitHub once the certificate is
-  provisioned after DNS verification
+- **HTTPS:** certificate issued and approved by GitHub (Let's Encrypt); the
+  "Enforce HTTPS" toggle (`https_enforced`) may lag behind approval by a
+  while — check current state with
+  `gh api repos/utpalpriyadarshi/vashudhaiv-nidam-website/pages`
 
 There is no CI pipeline — every push to `main` is live within moments.
