@@ -32,11 +32,11 @@ All notable changes to this project are documented here.
 - Contact section copy referenced "Har Ki Pauri" instead of the actual
   Arya Samaj Mandir / BHEL Ranipur address; corrected.
 
+### Fixed
+- GitHub's "Enforce HTTPS" toggle (`https_enforced`) is now `true` — the
+  site force-redirects to `https://vashudhaivnidam.org`.
+
 ### Known issues / carried-forward notes
-- GitHub's "Enforce HTTPS" toggle (`https_enforced`) is still `false` as of
-  this writing, even though the certificate is approved and HTTPS works
-  fine when accessed directly — no action needed on our end, just waiting
-  on GitHub.
 - Donate section is still a placeholder; going live via UPI ID/bank
   transfer details pending receipt from the organization.
 - Email address and specific 12A/80G registration numbers are still
