@@ -4,12 +4,30 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Single-page bilingual (Hindi-primary/English-secondary) website for वसुधैव नीडम् फाउंडेशन
-(Vashudhaiv Nidam Foundation), Haridwar. Static site: everything lives in `index.html` at
-the repo root, plus a handful of image/PDF assets alongside it. No build step, no
-frameworks, no package manager — plain HTML/CSS/JS in one file. There is no test suite
-and no lint/build/run command; editing is done directly in `index.html` and previewed by
-opening it in a browser.
+Bilingual (Hindi-primary/English-secondary) website for वसुधैव नीडम् फाउंडेशन
+(Vashudhaiv Nidam Foundation), Haridwar. Static site: `index.html` is the main
+single-page site at the repo root, plus four standalone legal pages (`privacy.html`,
+`terms.html`, `refund-policy.html`, `tax-exemption.html`) and a handful of image/PDF
+assets. No build step, no frameworks, no package manager — plain HTML/CSS/JS. There is
+no test suite and no lint/build/run command; editing is done directly in the HTML files
+and previewed by opening them in a browser.
+
+**Live at https://vashudhaivnidam.org (GitHub Pages, custom domain).**
+
+## Branching workflow — read before editing
+
+The site is live and already reviewed/approved by the organization's users, and `main`
+auto-deploys on every push with no CI/staging step in between. **Never commit or push
+directly to `main`.** For every change: create a feature branch (e.g.
+`git checkout -b docs/whatever`), commit there, push it, and only merge to `main` after
+the user has reviewed the change (they typically open the file locally in a browser
+first). This applies to docs and README changes too, not just `index.html`.
+
+**Keep `README.md`, `ARCHITECTURE.md`, and `CHANGELOG.md` updated as part of every
+change**, not as a separate cleanup pass afterward — when a change adds a page, fixes a
+bug, or updates content/config, update the relevant doc(s) in the same branch/commit.
+`CHANGELOG.md` gets a dated entry for anything user-visible; `README.md`/`ARCHITECTURE.md`
+get updated when structure, pages, or conventions change.
 
 ## Architecture of `index.html`
 
@@ -48,10 +66,20 @@ small inline `<script>` at the end (~line 762). There are no external JS depende
 - Writing or editing Hindi/English bilingual copy is a normal part of working in this
   file; follow the `hi` / `en-line` pattern above rather than treating Hindi as an edge
   case.
-- Several `[Placeholder]` markers remain in `index.html` for registration numbers,
-  address, phone, email, real testimonials, and gallery photos — don't remove these
-  markers without replacement content.
-- The donation/contact forms are placeholder-only (no backend wired up).
+- Registration no., address, and phone are confirmed and filled in throughout
+  `index.html` and the legal pages. Email and the specific 12A/80G registration numbers
+  remain `[Placeholder]` markers — don't remove these without replacement content.
+- Several `[Placeholder]` markers also remain in `index.html` for real testimonials and
+  gallery photos.
+- The donation/contact forms are placeholder-only (no backend wired up). Donations are
+  planned to go live via UPI ID/bank transfer details (no payment gateway) once received
+  from the organization.
+- The four legal pages (`privacy.html`, `terms.html`, `refund-policy.html`,
+  `tax-exemption.html`) were adapted from `Disclaimer_information.docx` and
+  `Relative-Definition.docx`. Those source docs had been copied from a different NGO's
+  template (Bal Raksha Bharat) and referenced the wrong org's Delhi address/jurisdiction —
+  already corrected to Haridwar in the live pages, but keep this in mind if re-deriving
+  content from those source files again.
 - The "Ongoing Social Activities" list in the Objectives section was reconstructed from
   a legacy-font PDF (`uddeshya.pdf`) that didn't extract cleanly — treat it as
   provisional and verify against the source PDF if asked to correct it.
@@ -59,8 +87,10 @@ small inline `<script>` at the end (~line 762). There are no external JS depende
 
 ## Deployment
 
-No CI/build pipeline. The intended deployment path is GitHub Pages (chosen over Netlify
-after a Netlify config-parsing failure): enable Pages via `gh api` on the repo, serving
-from `main` branch root (`/`), then point a custom domain via a root-level `CNAME` file
-plus GitHub Pages' standard A/CNAME DNS records. Once Pages is enabled, every push to
-`main` deploys directly — no build step in between.
+No CI/build pipeline. Deployed via GitHub Pages (chosen over Netlify after a Netlify
+config-parsing failure), serving from `main` branch root (`/`), with the custom domain
+`vashudhaivnidam.org` configured via a root-level `CNAME` file plus GitHub Pages' standard
+A/CNAME DNS records (Namecheap). Every push to `main` deploys directly — no build step in
+between. HTTPS certificate is issued/approved by GitHub; as of this writing GitHub's own
+"Enforce HTTPS" toggle (`https_enforced`) is still pending on GitHub's side even though
+the cert works — check via `gh api repos/utpalpriyadarshi/vashudhaiv-nidam-website/pages`.

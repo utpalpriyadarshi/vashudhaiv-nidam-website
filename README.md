@@ -38,6 +38,19 @@ Hosted on GitHub Pages, serving from the `main` branch root. Every push to
 domain is configured via the root-level `CNAME` file plus DNS records at the
 registrar (Namecheap); see `ARCHITECTURE.md` for details.
 
+## Pages
+
+- `index.html` — the main single-page site
+- `privacy.html` — Privacy Policy
+- `terms.html` — Terms & Conditions
+- `refund-policy.html` — Donation & Refund Policy
+- `tax-exemption.html` — Tax Exemption (80G) info, including the Section 13
+  "relative"/"specified person" disclosure rules for donations over ₹50,000
+
+All four legal pages are linked from `index.html`'s footer "Legal" column,
+are bilingual (Hindi/English), and share a lightweight common look with a
+"Back to Home" link — see `ARCHITECTURE.md` for how they're built.
+
 ## Content notes
 
 - Hindi copy throughout was AI-drafted and has not yet been reviewed by a
@@ -46,9 +59,13 @@ registrar (Namecheap); see `ARCHITECTURE.md` for details.
   reconstructed from a legacy-font PDF (`uddeshya.pdf`) that didn't extract
   cleanly — verify against the original document if in doubt.
 - Donation/contact forms are placeholder-only — no backend connected yet.
-- Several `[Placeholder]` markers remain in `index.html` for email, real
-  testimonials, and gallery photos. Registration no., address, and phone
-  are now available above and still need to be applied in `index.html`.
+  Donations are planned to go live via UPI/bank transfer details once
+  received from the organization (no payment gateway involved).
+- Registration no., address, and phone are filled in throughout
+  `index.html` and the legal pages. Email is still a `[Placeholder]` (not
+  yet provided), as are the specific 12A/80G registration numbers.
+- Several `[Placeholder]` markers remain in `index.html` for real
+  testimonials and gallery photos.
 
 ## Contributing to copy
 
