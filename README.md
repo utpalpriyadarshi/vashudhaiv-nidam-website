@@ -7,6 +7,16 @@ information.
 
 **Live site:** https://vashudhaivnidam.org
 
+## Organization details
+
+Source: registration voucher (`voucher.jpeg`).
+
+- **Registration No.:** IV/418/2024-II
+- **Address:** Arya Samaj Mandir, Sector-1, BHEL Ranipur, Haridwar, Uttarakhand
+- **Phone:** +91 6397447509, +91 9634010402
+- **Email:** *(not yet available — no email address appears on the voucher;
+  still a `[Placeholder]` in `index.html`)*
+
 ## Tech stack
 
 Plain HTML/CSS/JS — no build step, no framework, no package manager. The
@@ -36,8 +46,9 @@ registrar (Namecheap); see `ARCHITECTURE.md` for details.
   reconstructed from a legacy-font PDF (`uddeshya.pdf`) that didn't extract
   cleanly — verify against the original document if in doubt.
 - Donation/contact forms are placeholder-only — no backend connected yet.
-- Several `[Placeholder]` markers remain in `index.html` for registration
-  numbers, address, phone, email, real testimonials, and gallery photos.
+- Several `[Placeholder]` markers remain in `index.html` for email, real
+  testimonials, and gallery photos. Registration no., address, and phone
+  are now available above and still need to be applied in `index.html`.
 
 ## Contributing to copy
 
