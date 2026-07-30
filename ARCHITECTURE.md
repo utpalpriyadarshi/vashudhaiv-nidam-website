@@ -121,9 +121,8 @@ expected and not a bug.
   - `A` records for `@` → GitHub Pages IPs
     (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`)
   - `CNAME` record for `www` → `utpalpriyadarshi.github.io`
-- **HTTPS:** certificate issued and approved by GitHub (Let's Encrypt); the
-  "Enforce HTTPS" toggle (`https_enforced`) may lag behind approval by a
-  while — check current state with
-  `gh api repos/utpalpriyadarshi/vashudhaiv-nidam-website/pages`
+- **HTTPS:** fully enforced (`https_enforced: true`) with a GitHub-issued
+  Let's Encrypt certificate — the site force-redirects to
+  `https://vashudhaivnidam.org`
 
 There is no CI pipeline — every push to `main` is live within moments.

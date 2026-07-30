@@ -91,6 +91,6 @@ No CI/build pipeline. Deployed via GitHub Pages (chosen over Netlify after a Net
 config-parsing failure), serving from `main` branch root (`/`), with the custom domain
 `vashudhaivnidam.org` configured via a root-level `CNAME` file plus GitHub Pages' standard
 A/CNAME DNS records (Namecheap). Every push to `main` deploys directly — no build step in
-between. HTTPS certificate is issued/approved by GitHub; as of this writing GitHub's own
-"Enforce HTTPS" toggle (`https_enforced`) is still pending on GitHub's side even though
-the cert works — check via `gh api repos/utpalpriyadarshi/vashudhaiv-nidam-website/pages`.
+between. HTTPS is fully enforced (`https_enforced: true`) — the site force-redirects to
+`https://vashudhaivnidam.org`; verify via
+`gh api repos/utpalpriyadarshi/vashudhaiv-nidam-website/pages` if ever in doubt.
