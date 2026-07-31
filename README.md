@@ -14,8 +14,7 @@ Source: registration voucher (`voucher.jpeg`).
 - **Registration No.:** IV/418/2024-II
 - **Address:** Arya Samaj Mandir, Sector-1, BHEL Ranipur, Haridwar, Uttarakhand
 - **Phone:** +91 6397447509, +91 9634010402
-- **Email:** *(not yet available — no email address appears on the voucher;
-  still a `[Placeholder]` in `index.html`)*
+- **Email:** vasudhaivnidam@gmail.com
 
 ## Tech stack
 
@@ -61,9 +60,9 @@ are bilingual (Hindi/English), and share a lightweight common look with a
 - Donation/contact forms are placeholder-only — no backend connected yet.
   Donations go via UPI ID and bank transfer details (no payment gateway
   involved), published in the Contact section of `index.html`.
-- Registration no., address, phone, and 12A/80G provisional registration
-  numbers (see `tax-exemption.html`) are filled in throughout `index.html`
-  and the legal pages. Email is still a `[Placeholder]` (not yet provided).
+- Registration no., address, phone, email, and 12A/80G provisional
+  registration numbers (see `tax-exemption.html`) are filled in throughout
+  `index.html` and the legal pages.
 - Several `[Placeholder]` markers remain in `index.html` for real
   testimonials and gallery photos.
 

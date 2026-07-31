@@ -15,6 +15,8 @@ All notable changes to this project are documented here.
   confirm they're on `vashudhaivnidam.org` and to verify by phone if
   in doubt (no QR code embedded, since a static QR image is as
   spoofable as any other detail on a cloned copy of the site).
+- Confirmed contact email (`vasudhaivnidam@gmail.com`), replacing the
+  `[Placeholder]` in the Contact section of `index.html`.
 
 ### Fixed
 - English translations across the site (`.en-sub`, `.en-line`, `.en-mini`)
