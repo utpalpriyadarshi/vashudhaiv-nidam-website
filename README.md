@@ -2,8 +2,8 @@
 
 Official website for the Vashudhaiv Nidam Foundation, Haridwar — a bilingual
 (Hindi-primary, English-secondary) single-page site covering the foundation's
-mission, founder, objectives, programs, heritage, stories, and contact/donation
-information.
+mission, founder, team, objectives, programs, heritage, stories, and
+contact/donation information.
 
 **Live site:** https://vashudhaivnidam.org
 
@@ -13,8 +13,8 @@ Source: registration voucher (`voucher.jpeg`).
 
 - **Registration No.:** IV/418/2024-II
 - **Address:** Arya Samaj Mandir, Sector-1, BHEL Ranipur, Haridwar, Uttarakhand
-- **Phone:** +91 6397447509, +91 9634010402
-- **Email:** vasudhaivnidam@gmail.com
+- **Phone:** +91 6397447509, +91 9634010402, +91 8130114807
+- **Email:** vasudhaivnidam@gmail.com, yogendralathakuri@gmail.com
 
 ## Tech stack
 

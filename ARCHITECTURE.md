@@ -39,6 +39,8 @@ and often an `id` used as a nav-anchor target:
 - `.founder` — founder profile
 - `.stats` — animated counters
 - `#about` — about the foundation (includes an inline SVG river graphic)
+- `.team#team` — office bearers (patrons, president, secretary, treasurer,
+  etc.), grouped by role, each with an initial-letter photo placeholder
 - `.objectives#objectives` — mission objectives, including the "Ongoing
   Social Activities" list sourced from `uddeshya.pdf`
 - `.programs#programs` — programs offered

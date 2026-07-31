@@ -17,6 +17,15 @@ All notable changes to this project are documented here.
   spoofable as any other detail on a cloned copy of the site).
 - Confirmed contact email (`vasudhaivnidam@gmail.com`), replacing the
   `[Placeholder]` in the Contact section of `index.html`.
+- Second contact email (`yogendralathakuri@gmail.com`) and phone
+  number (+91 8130114807) added to the Contact section.
+- New "Our Team" section (`#team`, nav-linked, between About and
+  Objectives) listing the foundation's office bearers by role —
+  patrons, president, vice president, secretary/joint secretary,
+  treasurer/joint treasurer, estate officer, spokesperson, media
+  in-charges, and advisors. Each entry shows name + role with an
+  initial-letter photo placeholder; individual phone numbers are
+  intentionally omitted pending each person's consent to publish one.
 
 ### Fixed
 - English translations across the site (`.en-sub`, `.en-line`, `.en-mini`)
