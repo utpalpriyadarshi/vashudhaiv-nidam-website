@@ -1,9 +1,9 @@
-# वसुधैव नीडम् फाउंडेशन — Vashudhaiv Nidam Foundation
+# वसुधैव नीडम् फाउंडेशन — Vasudhaiv Nidam Foundation
 
-Official website for the Vashudhaiv Nidam Foundation, Haridwar — a bilingual
+Official website for the Vasudhaiv Nidam Foundation, Haridwar — a bilingual
 (Hindi-primary, English-secondary) single-page site covering the foundation's
-mission, founder, objectives, programs, heritage, stories, and contact/donation
-information.
+mission, founder, team, objectives, programs, heritage, stories, and
+contact/donation information.
 
 **Live site:** https://vashudhaivnidam.org
 
@@ -13,9 +13,8 @@ Source: registration voucher (`voucher.jpeg`).
 
 - **Registration No.:** IV/418/2024-II
 - **Address:** Arya Samaj Mandir, Sector-1, BHEL Ranipur, Haridwar, Uttarakhand
-- **Phone:** +91 6397447509, +91 9634010402
-- **Email:** *(not yet available — no email address appears on the voucher;
-  still a `[Placeholder]` in `index.html`)*
+- **Phone:** +91 6397447509, +91 9634010402, +91 8130114807
+- **Email:** vasudhaivnidam@gmail.com, yogendralathakuri@gmail.com
 
 ## Tech stack
 
@@ -41,15 +40,17 @@ registrar (Namecheap); see `ARCHITECTURE.md` for details.
 ## Pages
 
 - `index.html` — the main single-page site
+- `team.html` — office bearers (patrons, president, secretary, treasurer,
+  spokesperson, media in-charges, advisors), grouped by role
 - `privacy.html` — Privacy Policy
 - `terms.html` — Terms & Conditions
 - `refund-policy.html` — Donation & Refund Policy
 - `tax-exemption.html` — Tax Exemption (80G) info, including the Section 13
   "relative"/"specified person" disclosure rules for donations over ₹50,000
 
-All four legal pages are linked from `index.html`'s footer "Legal" column,
-are bilingual (Hindi/English), and share a lightweight common look with a
-"Back to Home" link — see `ARCHITECTURE.md` for how they're built.
+All four legal pages plus `team.html` are linked from `index.html`'s nav
+and/or footer, are bilingual (Hindi/English), and share a lightweight common
+look with a "Back to Home" link — see `ARCHITECTURE.md` for how they're built.
 
 ## Content notes
 
@@ -59,11 +60,11 @@ are bilingual (Hindi/English), and share a lightweight common look with a
   reconstructed from a legacy-font PDF (`uddeshya.pdf`) that didn't extract
   cleanly — verify against the original document if in doubt.
 - Donation/contact forms are placeholder-only — no backend connected yet.
-  Donations are planned to go live via UPI/bank transfer details once
-  received from the organization (no payment gateway involved).
-- Registration no., address, and phone are filled in throughout
-  `index.html` and the legal pages. Email is still a `[Placeholder]` (not
-  yet provided), as are the specific 12A/80G registration numbers.
+  Donations go via UPI ID and bank transfer details (no payment gateway
+  involved), published in the Contact section of `index.html`.
+- Registration no., address, phone, email, and 12A/80G provisional
+  registration numbers (see `tax-exemption.html`) are filled in throughout
+  `index.html` and the legal pages.
 - Several `[Placeholder]` markers remain in `index.html` for real
   testimonials and gallery photos.
 
