@@ -729,7 +729,7 @@
       </p>
     </div>
     <div class="reveal">
-      <form onsubmit="event.preventDefault(); alert('This is a placeholder form — connect it to a backend or form service before launch.');">
+      <form onsubmit="event.preventDefault(); var n=document.getElementById('name').value, e=document.getElementById('email').value, r=document.getElementById('reason').value, m=document.getElementById('msg').value; var body='Name: '+n+'\n'+'Email: '+e+'\n'+'Reason: '+r+'\n\n'+m; window.location.href='mailto:vasudhaivnidam@gmail.com?subject='+encodeURIComponent('Website Contact - '+r)+'&body='+encodeURIComponent(body);">
         <div class="field"><label for="name" class="hi">पूरा नाम<span class="en-mini">Full Name</span></label><input id="name" type="text" placeholder="आपका नाम" required></div>
         <div class="field"><label for="email" class="hi">ईमेल<span class="en-mini">Email</span></label><input id="email" type="email" placeholder="you@example.com" required></div>
         <div class="field"><label for="reason" class="hi">मैं यह करना चाहूँगा/चाहूँगी<span class="en-mini">I'd like to</span></label>
@@ -740,6 +740,8 @@
         <div class="field"><label for="msg" class="hi">संदेश<span class="en-mini">Message</span></label><textarea id="msg" placeholder="हमें थोड़ा और बताएं..."></textarea></div>
         <button type="submit" class="btn btn-primary hi" style="width:100%;">संदेश भेजें<span class="en-mini">Send Message</span></button>
       </form>
+      <p class="hi" style="text-align:center;margin:16px 0;opacity:0.6;font-size:0.85rem;">या<span class="en-mini" style="display:inline;margin-left:4px;">or</span></p>
+      <a href="https://wa.me/916397447509?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%2C%20%E0%A4%AE%E0%A5%81%E0%A4%9D%E0%A5%87%20%E0%A4%B5%E0%A4%B8%E0%A5%81%E0%A4%A7%E0%A5%88%E0%A4%B5%20%E0%A4%A8%E0%A5%80%E0%A4%A1%E0%A4%AE%E0%A5%8D%20%E0%A4%AB%E0%A4%BE%E0%A4%89%E0%A4%82%E0%A4%A1%E0%A5%87%E0%A4%B6%E0%A4%A8%20%E0%A4%B8%E0%A5%87%20%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95%20%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%B9%E0%A5%88%E0%A5%A4" target="_blank" rel="noopener" class="btn btn-ghost hi" style="width:100%;text-align:center;border-color:rgba(255,255,255,0.35);color:var(--paper);">WhatsApp पर संदेश भेजें<span class="en-mini">Message on WhatsApp</span></a>
     </div>
   </div>
 </section>

@@ -28,7 +28,17 @@ All notable changes to this project are documented here.
   pending each person's consent to publish one. (First tried as an
   embedded `#team` section on the homepage; moved to its own page,
   matching the legal pages' pattern, since it didn't read well inline.
-  The "Estate Officer" role was also dropped as not needed.)
+  The "Estate Officer" role was also dropped as not needed.) President
+  entry updated to "President & Founder" — the organization's founder,
+  Shri Yogendra Medhavi, currently also holds the President role.
+- Contact form now submits via `mailto:` (opens the visitor's email
+  client with name/email/reason/message pre-filled), replacing the
+  placeholder JS alert. Added a "Message on WhatsApp" button as an
+  alternative, linking to wa.me/916397447509 with a pre-filled Hindi
+  greeting — no third-party form service/account needed for either.
+- Added `PENDING_WORK.md` to track remaining placeholders/decisions
+  (testimonials, gallery photos, team photos, heritage blog snippets,
+  placeholder-design banner, footer copyright note) across sessions.
 
 ### Fixed
 - English translations across the site (`.en-sub`, `.en-line`, `.en-mini`)
