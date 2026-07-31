@@ -4,6 +4,14 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Fixed
+- Corrected the English spelling of the organization's name from
+  "Vashudhaiv Nidam" to "Vasudhaiv Nidam" (an extra "h" had been
+  introduced by mistake) across `index.html`, the four legal pages,
+  and project docs. The domain `vashudhaivnidam.org` keeps its
+  existing spelling as-is since DNS/GitHub Pages are already
+  configured with it — only display text was corrected.
+
 ### Added
 - Confirmed 12A and 80G provisional registration numbers (from the
   Income Tax Department's Form 10AC orders) and organization PAN, now
@@ -71,8 +79,8 @@ All notable changes to this project are documented here.
 - Nav menu items were vertically misaligned because one label
   ("हमारे बारे में"/About) wrapped to two lines while others stayed on one;
   forced single-line nav labels so all items align on the same baseline.
-- Header brand subtitle ("Vashudhaiv Nidam Foundation · Haridwar") was
-  wrapping mid-word; now keeps "Vashudhaiv Nidam Foundation" intact and lets
+- Header brand subtitle ("Vasudhaiv Nidam Foundation · Haridwar") was
+  wrapping mid-word; now keeps "Vasudhaiv Nidam Foundation" intact and lets
   "· Haridwar" drop to its own line instead of crowding the Home nav link.
 - Contact section copy referenced "Har Ki Pauri" instead of the actual
   Arya Samaj Mandir / BHEL Ranipur address; corrected.
