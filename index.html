@@ -229,6 +229,20 @@
   .pillar p{font-size:0.86rem;color:#5a5a50;margin:0;}
   @media (max-width:860px){.about-grid{grid-template-columns:1fr;}.about-visual{aspect-ratio:16/9;}}
 
+  /* ===== TEAM ===== */
+  .team{background:var(--stone);}
+  .team-groups{display:flex;flex-direction:column;gap:32px;margin-top:8px;}
+  .team-group h3{font-size:1.05rem;color:var(--maroon);margin-bottom:14px;}
+  .team-row{display:flex;flex-wrap:wrap;gap:20px 28px;}
+  .team-person{display:flex;align-items:center;gap:12px;min-width:230px;}
+  .team-photo{
+    width:56px;height:56px;border-radius:50%;flex-shrink:0;
+    background:var(--teal-mid);color:var(--paper);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.25rem;
+  }
+  .team-person p{margin:0;font-size:0.92rem;}
+
   /* ===== PROGRAMS — river spine ===== */
   .programs{background:var(--paper);position:relative;}
   .river-track{position:relative;max-width:900px;margin:0 auto;}
@@ -407,6 +421,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#home" class="hi">होम<span class="en-mini">Home</span></a></li>
       <li><a href="#about" class="hi">हमारे बारे में<span class="en-mini">About</span></a></li>
+      <li><a href="#team" class="hi">हमारी टीम<span class="en-mini">Our Team</span></a></li>
       <li><a href="#objectives" class="hi">उद्देश्य<span class="en-mini">Objectives</span></a></li>
       <li><a href="#programs" class="hi">कार्यक्रम<span class="en-mini">Programs</span></a></li>
       <li><a href="#heritage" class="hi">विरासत<span class="en-mini">Heritage Hub</span></a></li>
@@ -498,6 +513,79 @@
         <div class="pillar"><h4 class="hi">संपूर्ण भारत में उपस्थिति<span class="en-mini" style="color:var(--maroon);">Pan-India Reach</span></h4><p class="hi">मुख्यालय हरिद्वार, कार्यक्षेत्र संपूर्ण भारत</p></div>
         <div class="pillar"><h4 class="hi">100% निःशुल्क सेवाएँ<span class="en-mini" style="color:var(--maroon);">100% Free Services</span></h4><p class="hi">किसी भी लाभार्थी परिवार से कोई शुल्क नहीं</p></div>
         <div class="pillar"><h4 class="hi">पारदर्शिता<span class="en-mini" style="color:var(--maroon);">Transparent</span></h4><p class="hi">वार्षिक लेखा-परीक्षित खाते प्रकाशित</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow hi">हमारी टीम<span class="en-mini">Our Team</span></span>
+      <h2 class="hi">फाउंडेशन के पदाधिकारी<span class="en-sub" style="color:#4a4a42;">Foundation Office Bearers</span></h2>
+    </div>
+    <div class="team-groups">
+      <div class="team-group reveal">
+        <h3 class="hi">संरक्षक<span class="en-mini">Patrons</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्री संजय मित्तल जी<span class="en-mini">Shri Sanjay Mittal Ji</span></p></div>
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्रीमती स्नेह लता खट्टर<span class="en-mini">Shrimati Sneh Lata Khattar</span></p></div>
+          <div class="team-person"><div class="team-photo">A</div><p class="hi">श्रीमती अजय लक्ष्मी ग्रोवर<span class="en-mini">Shrimati Ajay Lakshmi Grover</span></p></div>
+          <div class="team-person"><div class="team-photo">A</div><p class="hi">श्रीमती अमरेश जी<span class="en-mini">Shrimati Amresh Ji</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">अध्यक्ष<span class="en-mini">President</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">Y</div><p class="hi">श्री योगेन्द्र मेधावी<span class="en-mini">Shri Yogendra Medhavi</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">उपाध्यक्ष<span class="en-mini">Vice President</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">R</div><p class="hi">श्री राकेश कुमार<span class="en-mini">Shri Rakesh Kumar</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">सचिव एवं सह सचिव<span class="en-mini">Secretary &amp; Joint Secretary</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">V</div><p class="hi">श्री विभाष सिन्हा<span class="en-mini">Shri Vibhash Sinha — Secretary</span></p></div>
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्री शंकर दयाल<span class="en-mini">Shri Shankar Dayal — Joint Secretary</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">कोषाध्यक्ष एवं सह कोषाध्यक्ष<span class="en-mini">Treasurer &amp; Joint Treasurer</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्री शेर सिंह<span class="en-mini">Shri Sher Singh — Treasurer</span></p></div>
+          <div class="team-person"><div class="team-photo">I</div><p class="hi">श्री ईश्वर दयाल<span class="en-mini">Shri Ishwar Dayal — Joint Treasurer</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">सम्पदा अधिकारी<span class="en-mini">Estate Officer</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">U</div><p class="hi">श्री उत्पल प्रियदर्शी<span class="en-mini">Shri Utpal Priyadarshi</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">प्रवक्ता<span class="en-mini">Spokesperson</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">डॉ. संजय त्यागी<span class="en-mini">Dr. Sanjay Tyagi</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">मीडिया प्रभारी<span class="en-mini">Media In-charge</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्री सौरभ प्रजापति<span class="en-mini">Shri Saurabh Prajapati</span></p></div>
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्री शिवम सैनी<span class="en-mini">Shri Shivam Saini</span></p></div>
+          <div class="team-person"><div class="team-photo">S</div><p class="hi">श्री सत्येन्द्र<span class="en-mini">Shri Satyendra</span></p></div>
+        </div>
+      </div>
+      <div class="team-group reveal">
+        <h3 class="hi">सलाहकार<span class="en-mini">Advisors</span></h3>
+        <div class="team-row">
+          <div class="team-person"><div class="team-photo">G</div><p class="hi">आचार्य श्री ज्ञानेन्द्र<span class="en-mini">Acharya Shri Gyanendra</span></p></div>
+          <div class="team-person"><div class="team-photo">V</div><p class="hi">श्री विशाल सैनी<span class="en-mini">Shri Vishal Saini</span></p></div>
+        </div>
       </div>
     </div>
   </div>
