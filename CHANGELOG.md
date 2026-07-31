@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Fixed
+- English translations across the site (`.en-sub`, `.en-line`, `.en-mini`)
+  were rendered at ~60% opacity, smaller size, and (for `.en-line`) italic,
+  making them look faded/secondary next to the bold Hindi headings. Raised
+  opacity to 0.85, increased font-weight and size, and dropped the italic,
+  while keeping Hindi as the visually primary language. Also removed 47
+  inline style overrides that had been re-applying the old lower
+  opacity/italic per-instance.
+
 ### Added
 - `.gitignore` for Office lock files (`~$*`) and OS cruft.
 - `README.md`, `ARCHITECTURE.md`, `CHANGELOG.md` project documentation.
