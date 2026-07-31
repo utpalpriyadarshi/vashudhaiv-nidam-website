@@ -4,6 +4,18 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Added
+- Confirmed 12A and 80G provisional registration numbers (from the
+  Income Tax Department's Form 10AC orders) and organization PAN, now
+  published on `tax-exemption.html` and reflected in the Transparency
+  section of `index.html` (previously a "shortly" placeholder).
+- Bank account details (ICICI Bank, Hardwar-Jwalapur branch, A/c No.,
+  IFSC) and UPI ID for donations, added to the Contact section of
+  `index.html`, along with a fraud-prevention note advising donors to
+  confirm they're on `vashudhaivnidam.org` and to verify by phone if
+  in doubt (no QR code embedded, since a static QR image is as
+  spoofable as any other detail on a cloned copy of the site).
+
 ### Fixed
 - English translations across the site (`.en-sub`, `.en-line`, `.en-mini`)
   were rendered at ~60% opacity, smaller size, and (for `.en-line`) italic,

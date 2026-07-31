@@ -59,11 +59,11 @@ are bilingual (Hindi/English), and share a lightweight common look with a
   reconstructed from a legacy-font PDF (`uddeshya.pdf`) that didn't extract
   cleanly — verify against the original document if in doubt.
 - Donation/contact forms are placeholder-only — no backend connected yet.
-  Donations are planned to go live via UPI/bank transfer details once
-  received from the organization (no payment gateway involved).
-- Registration no., address, and phone are filled in throughout
-  `index.html` and the legal pages. Email is still a `[Placeholder]` (not
-  yet provided), as are the specific 12A/80G registration numbers.
+  Donations go via UPI ID and bank transfer details (no payment gateway
+  involved), published in the Contact section of `index.html`.
+- Registration no., address, phone, and 12A/80G provisional registration
+  numbers (see `tax-exemption.html`) are filled in throughout `index.html`
+  and the legal pages. Email is still a `[Placeholder]` (not yet provided).
 - Several `[Placeholder]` markers remain in `index.html` for real
   testimonials and gallery photos.
 
