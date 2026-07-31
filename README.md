@@ -40,15 +40,17 @@ registrar (Namecheap); see `ARCHITECTURE.md` for details.
 ## Pages
 
 - `index.html` — the main single-page site
+- `team.html` — office bearers (patrons, president, secretary, treasurer,
+  spokesperson, media in-charges, advisors), grouped by role
 - `privacy.html` — Privacy Policy
 - `terms.html` — Terms & Conditions
 - `refund-policy.html` — Donation & Refund Policy
 - `tax-exemption.html` — Tax Exemption (80G) info, including the Section 13
   "relative"/"specified person" disclosure rules for donations over ₹50,000
 
-All four legal pages are linked from `index.html`'s footer "Legal" column,
-are bilingual (Hindi/English), and share a lightweight common look with a
-"Back to Home" link — see `ARCHITECTURE.md` for how they're built.
+All four legal pages plus `team.html` are linked from `index.html`'s nav
+and/or footer, are bilingual (Hindi/English), and share a lightweight common
+look with a "Back to Home" link — see `ARCHITECTURE.md` for how they're built.
 
 ## Content notes
 

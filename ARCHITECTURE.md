@@ -39,8 +39,6 @@ and often an `id` used as a nav-anchor target:
 - `.founder` — founder profile
 - `.stats` — animated counters
 - `#about` — about the foundation (includes an inline SVG river graphic)
-- `.team#team` — office bearers (patrons, president, secretary, treasurer,
-  etc.), grouped by role, each with an initial-letter photo placeholder
 - `.objectives#objectives` — mission objectives, including the "Ongoing
   Social Activities" list sourced from `uddeshya.pdf`
 - `.programs#programs` — programs offered
@@ -88,6 +86,18 @@ out shared CSS, to avoid touching the live `index.html` styling when
 editing legal copy. They're linked from `index.html`'s footer "Legal"
 column.
 
+## Team page
+
+`team.html` follows the same standalone/self-contained pattern as the legal
+pages above (its own inline CSS, sticky header with a "Back to Home" link,
+matching footer) rather than being embedded in `index.html`. It lists the
+foundation's office bearers grouped by role — patrons, president, vice
+president, secretary/joint secretary, treasurer/joint treasurer,
+spokesperson, media in-charges, and advisors — each with an initial-letter
+photo placeholder pending real photos. It's linked from `index.html`'s nav
+and footer "Explore" column. An embedded on-page version was tried first but
+didn't read well inline on the homepage, so it was moved out.
+
 Content was adapted from `Disclaimer_information.docx` (80G tax note,
 Privacy Policy, Terms & Conditions, all originally bundled in one doc) and
 `Relative-Definition.docx` (Section 13 "relative"/"specified person"
@@ -99,7 +109,8 @@ address and Haridwar/Uttarakhand jurisdiction instead.
 
 ## Assets
 
-- `index.html` — the entire site
+- `index.html` — the main single-page site
+- `team.html` — office bearers page
 - `maharshi-dayanand-saraswati.jpg`, `om.jpeg` — images referenced by the page
 - `uddeshya.pdf` — source document for the objectives/activities content
 - `Disclaimer_information.docx`, `Relative-Definition.docx` — source

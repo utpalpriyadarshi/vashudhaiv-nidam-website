@@ -19,13 +19,16 @@ All notable changes to this project are documented here.
   `[Placeholder]` in the Contact section of `index.html`.
 - Second contact email (`yogendralathakuri@gmail.com`) and phone
   number (+91 8130114807) added to the Contact section.
-- New "Our Team" section (`#team`, nav-linked, between About and
-  Objectives) listing the foundation's office bearers by role —
-  patrons, president, vice president, secretary/joint secretary,
-  treasurer/joint treasurer, estate officer, spokesperson, media
-  in-charges, and advisors. Each entry shows name + role with an
-  initial-letter photo placeholder; individual phone numbers are
-  intentionally omitted pending each person's consent to publish one.
+- New `team.html` page listing the foundation's office bearers by
+  role — patrons, president, vice president, secretary/joint
+  secretary, treasurer/joint treasurer, spokesperson, media
+  in-charges, and advisors — linked from `index.html`'s nav and footer.
+  Each entry shows name + role with an initial-letter photo
+  placeholder; individual phone numbers are intentionally omitted
+  pending each person's consent to publish one. (First tried as an
+  embedded `#team` section on the homepage; moved to its own page,
+  matching the legal pages' pattern, since it didn't read well inline.
+  The "Estate Officer" role was also dropped as not needed.)
 
 ### Fixed
 - English translations across the site (`.en-sub`, `.en-line`, `.en-mini`)
