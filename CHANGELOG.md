@@ -8,6 +8,9 @@ All notable changes to this project are documented here.
 - English (`en-line`) translations for the Objectives list and the
   "Ongoing Social Activities" list in the Objectives section of
   `index.html`, which previously had Hindi text only.
+- English (`en-mini`) translations for the footer's Explore/Involved/
+  Legal link columns and the footer-bottom copyright/credit lines in
+  `index.html`, which previously had Hindi text only.
 
 ### Fixed
 - Corrected the English spelling of the organization's name from
