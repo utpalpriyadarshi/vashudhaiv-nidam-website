@@ -21,11 +21,12 @@ delete them) as each is resolved.
    still present, not yet removed.
 6. **Footer copyright note** (`index.html`) — still reads
    "[Placeholder सामग्री — केवल डिज़ाइन समीक्षा हेतु]".
-7. **Founder's photo/bio accuracy** — worth double-checking against the
-   actual founder before launch (the Founder section on the homepage
-   currently profiles Maharshi Dayanand Saraswati as spiritual
-   inspiration, not a photo/bio of Shri Yogendra Medhavi personally —
-   confirm whether a personal founder bio/photo is wanted in addition).
+7. **Footer "Events/Connect" links** (`index.html`) — add links to
+   YouTube, Facebook, and Google Meet so visitors can find
+   events/streams. Options discussed: a small social-icon row (matches
+   the existing WhatsApp icon), a labeled bilingual footer section, or
+   a dedicated `events.html` page if a real events calendar develops.
+   Decision and actual channel/page/Meet URLs still needed.
 
 ## Done
 
@@ -38,7 +39,10 @@ delete them) as each is resolved.
   `yogendralathakuri@gmail.com`) and second phone number added.
 - Office bearers moved to standalone `team.html`, linked from nav/footer.
   President entry kept as "President" (अध्यक्ष) only, not "President &
-  Founder", even though Shri Yogendra Medhavi is both.
+  Founder", even though Shri Yogendra Medhavi is both. This also settles
+  the Founder's photo/bio question raised earlier — the homepage Founder
+  section stays focused on Maharshi Dayanand Saraswati as spiritual
+  inspiration; no separate personal founder bio/photo needed there.
 - Contact/donation form backend: now submits via `mailto:` with a
   "Message on WhatsApp" button as an alternative (both use existing
   contact details, no third-party account needed).
