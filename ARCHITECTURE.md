@@ -111,13 +111,21 @@ address and Haridwar/Uttarakhand jurisdiction instead.
 
 - `index.html` — the main single-page site
 - `team.html` — office bearers page
-- `maharshi-dayanand-saraswati.jpg`, `om.jpeg` — images referenced by the page
-- `uddeshya.pdf` — source document for the objectives/activities content
-- `Disclaimer_information.docx`, `Relative-Definition.docx` — source
-  documents the four legal pages were adapted from (not directly deployed,
-  but their content now lives in the site)
-- `voucher.jpeg`, `DNS.jpeg` — reference screenshots (domain purchase, etc.),
-  not part of the deployed site
+- `reference-material/` — source/reference material only, gitignored and
+  not part of the deployed site (nothing in this folder is referenced by
+  any `<img>`/`url()` in the HTML — check before assuming otherwise):
+  - `maharshi-dayanand-saraswati.jpg`, `om.jpeg` — not currently used by
+    any page; kept in case they're wanted for the Founder section later
+  - `uddeshya.pdf` — source document for the objectives/activities content
+  - `Disclaimer_information.docx`, `Relative-Definition.docx` — source
+    documents the four legal pages were adapted from (their content now
+    lives in the site, not the files themselves)
+  - `voucher.jpeg`, `DNS.jpeg` — reference screenshots (registration
+    voucher, domain/DNS setup)
+  - `12A.jpeg`, `80G.jpeg`, `bank_details.jpeg`, `mail_id.jpeg`,
+    `officials.jpeg`, `upi_id.jpeg` — scans used to source the
+    registration numbers, bank/UPI details, and contact info published
+    on the site; kept local-only since they contain sensitive info
 
 The favicon is embedded directly as a `data:image/jpeg;base64,...` URI on
 line 7 of `index.html` — this makes that one line extremely long; this is
