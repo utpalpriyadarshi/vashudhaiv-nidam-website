@@ -37,8 +37,8 @@ delete them) as each is resolved.
 - Contact email(s) confirmed (`vasudhaivnidam@gmail.com`,
   `yogendralathakuri@gmail.com`) and second phone number added.
 - Office bearers moved to standalone `team.html`, linked from nav/footer.
-  President entry updated to "President & Founder" (Shri Yogendra
-  Medhavi is both).
+  President entry kept as "President" (अध्यक्ष) only, not "President &
+  Founder", even though Shri Yogendra Medhavi is both.
 - Contact/donation form backend: now submits via `mailto:` with a
   "Message on WhatsApp" button as an alternative (both use existing
   contact details, no third-party account needed).

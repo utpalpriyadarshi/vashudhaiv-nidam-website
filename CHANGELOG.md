@@ -37,8 +37,9 @@ All notable changes to this project are documented here.
   embedded `#team` section on the homepage; moved to its own page,
   matching the legal pages' pattern, since it didn't read well inline.
   The "Estate Officer" role was also dropped as not needed.) President
-  entry updated to "President & Founder" — the organization's founder,
-  Shri Yogendra Medhavi, currently also holds the President role.
+  entry kept as "President" (अध्यक्ष) only, without "& Founder" —
+  Shri Yogendra Medhavi also being the founder is noted elsewhere, not
+  in this title.
 - Contact form now submits via `mailto:` (opens the visitor's email
   client with name/email/reason/message pre-filled), replacing the
   placeholder JS alert. Added a "Message on WhatsApp" button as an
