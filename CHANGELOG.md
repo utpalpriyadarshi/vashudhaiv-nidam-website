@@ -11,6 +11,12 @@ All notable changes to this project are documented here.
 - English (`en-mini`) translations for the footer's Explore/Involved/
   Legal link columns and the footer-bottom copyright/credit lines in
   `index.html`, which previously had Hindi text only.
+- English translations for the remaining Hindi-only spots found in a
+  full-site sweep: the "About" section's pillar detail lines and the
+  Contact section's Head Office address/registration number in
+  `index.html`, and every row of the "Relative" definition table on
+  `tax-exemption.html` (previously only the header row and first data
+  row were translated).
 
 ### Fixed
 - Corrected the English spelling of the organization's name from
