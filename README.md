@@ -9,7 +9,7 @@ contact/donation information.
 
 ## Organization details
 
-Source: registration voucher (`voucher.jpeg`).
+Source: registration voucher (`reference-material/voucher.jpeg`).
 
 - **Registration No.:** IV/418/2024-II
 - **Address:** Arya Samaj Mandir, Sector-1, BHEL Ranipur, Haridwar, Uttarakhand
@@ -19,7 +19,9 @@ Source: registration voucher (`voucher.jpeg`).
 ## Tech stack
 
 Plain HTML/CSS/JS — no build step, no framework, no package manager. The
-entire site is `index.html`, with a handful of image/PDF assets alongside it.
+entire site is `index.html`. Source/reference material (scans, source docs)
+lives in `reference-material/`, which is gitignored and not part of the
+deployed site.
 
 ## Local development
 
@@ -57,8 +59,9 @@ look with a "Back to Home" link — see `ARCHITECTURE.md` for how they're built.
 - Hindi copy throughout was AI-drafted and has not yet been reviewed by a
   native/fluent speaker.
 - The "Ongoing Social Activities" list in the Objectives section was
-  reconstructed from a legacy-font PDF (`uddeshya.pdf`) that didn't extract
-  cleanly — verify against the original document if in doubt.
+  reconstructed from a legacy-font PDF (`reference-material/uddeshya.pdf`)
+  that didn't extract cleanly — verify against the original document if in
+  doubt.
 - Donation/contact forms are placeholder-only — no backend connected yet.
   Donations go via UPI ID and bank transfer details (no payment gateway
   involved), published in the Contact section of `index.html`.

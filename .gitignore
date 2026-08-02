@@ -5,3 +5,8 @@
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# Source/reference material (scans, source docs) — not part of the
+# deployed site; some contain sensitive info (bank details, IDs) that
+# shouldn't sit in a public repo's history.
+/reference-material/

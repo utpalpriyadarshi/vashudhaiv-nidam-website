@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Changed
+- Reorganized the repo root: moved all source/reference material (scans,
+  source `.docx`/`.pdf`, unused images) into a new `reference-material/`
+  folder, now gitignored since some files contain sensitive info (bank
+  details, ID scans). Deployed site pages (`index.html`, the legal pages,
+  `team.html`, `CNAME`) and project docs stay at the root, unaffected.
+  Removed two stale duplicate `claude-code-handoff-summary*.md` files from
+  early setup, superseded by `CLAUDE.md`/`ARCHITECTURE.md`/`CHANGELOG.md`.
+
 ### Added
 - English (`en-line`) translations for the Objectives list and the
   "Ongoing Social Activities" list in the Objectives section of
