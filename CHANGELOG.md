@@ -4,6 +4,11 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Added
+- English (`en-line`) translations for the Objectives list and the
+  "Ongoing Social Activities" list in the Objectives section of
+  `index.html`, which previously had Hindi text only.
+
 ### Fixed
 - Corrected the English spelling of the organization's name from
   "Vashudhaiv Nidam" to "Vasudhaiv Nidam" (an extra "h" had been
