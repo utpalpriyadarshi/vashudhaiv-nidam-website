@@ -14,7 +14,27 @@ delete them) as each is resolved.
    `[Placeholder नाम]` entries (parent, skills graduate, volunteer). Waiting
    on the organization.
 3. **Gallery photos** (`#gallery`, `index.html`) — placeholder note asking
-   for real event/program photography. Not yet available.
+   for real event/program photography. Not yet available. **Deferred until
+   after Phase 1 of the live-classes/WhatsApp work
+   (`PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`) ships.**
+
+   Planned workflow once picked up:
+   - The 8 tiles are currently empty `<div>`s styled with CSS gradients
+     (`.gallery-grid div:nth-child(...)`), not images — replace each with
+     an `<img>` sourced from a new `assets/gallery/` folder, keeping the
+     existing `hi`/`en-mini` caption overlay pattern.
+   - File naming should match each tile's caption slug (e.g.
+     `assets/gallery/classroom-day.jpg`).
+   - Photos should be resized to roughly tile-rendered size and compressed
+     (well under 300KB each) before committing — they go directly into the
+     git repo, so keeping them lean matters for repo size and page load.
+   - Confirm with the foundation once that event/program photos (especially
+     of children) are OK to publish, rather than checking per-photo.
+   - If the gallery is expected to grow well past ~8-12 photos, don't keep
+     committing dozens of images — add a "View more photos" tile linking to
+     an external album (Google Photos/Drive) instead, to avoid repo bloat.
+   - No JSON/data file needed for a fixed grid this size — hand-edited HTML
+     is consistent with how the rest of this site's content is maintained.
 4. **Team photos** (`team.html`) — all 9 entries currently show
    initial-letter circles instead of real photos.
 5. **Site-wide "placeholder design" banner** at the top of `index.html` —
