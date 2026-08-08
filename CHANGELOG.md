@@ -4,6 +4,12 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Added
+- New "WhatsApp Community" section (`.community#whatsapp`) in `index.html`,
+  linking to the foundation's WhatsApp Community invite link, plus a nav
+  entry. First of the 4-step Phase 1 rollout in
+  `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` (Step 1 of 4).
+
 ### Changed
 - Reorganized the repo root: moved all source/reference material (scans,
   source `.docx`/`.pdf`, unused images) into a new `reference-material/`

@@ -70,6 +70,9 @@ look with a "Back to Home" link — see `ARCHITECTURE.md` for how they're built.
   `index.html` and the legal pages.
 - Several `[Placeholder]` markers remain in `index.html` for real
   testimonials and gallery photos.
+- Live classes / WhatsApp Community integration is being built in phased
+  steps — see `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` for the plan and status.
+  Step 1 (WhatsApp Community section) has shipped.
 
 ## Contributing to copy
 

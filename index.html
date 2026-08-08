@@ -304,6 +304,23 @@
   .involve-card p{color:#4a4a42;font-size:0.9rem;margin-bottom:20px;}
   @media (max-width:860px){.involve-grid{grid-template-columns:1fr;}}
 
+  /* ===== WHATSAPP COMMUNITY ===== */
+  .community{background:var(--paper);}
+  .community-box{
+    display:flex;align-items:center;gap:40px;
+    background:linear-gradient(160deg, var(--teal-deep) 0%, var(--teal-mid) 100%);
+    color:var(--paper);border-radius:4px;padding:44px 48px;
+  }
+  .community-icon{
+    flex-shrink:0;width:64px;height:64px;color:var(--marigold);
+  }
+  .community-text h3{font-size:1.5rem;margin-bottom:10px;color:var(--paper);}
+  .community-text p{color:var(--ganga);font-size:0.92rem;margin-bottom:22px;max-width:560px;}
+  .community-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+  @media (max-width:700px){
+    .community-box{flex-direction:column;align-items:flex-start;padding:36px 28px;}
+  }
+
   /* ===== GALLERY ===== */
   .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px;}
   .gallery-grid div{
@@ -416,6 +433,7 @@
       <li><a href="#heritage" class="hi">विरासत<span class="en-mini">Heritage Hub</span></a></li>
       <li><a href="#stories" class="hi">कहानियाँ<span class="en-mini">Stories</span></a></li>
       <li><a href="#involve" class="hi">जुड़ें<span class="en-mini">Get Involved</span></a></li>
+      <li><a href="#whatsapp" class="hi">व्हाट्सएप<span class="en-mini">WhatsApp</span></a></li>
       <li><a href="#contact" class="hi">संपर्क<span class="en-mini">Contact</span></a></li>
       <li><a href="#involve" class="nav-cta hi">दान करें<span class="en-mini">Donate</span></a></li>
     </ul>
@@ -673,6 +691,22 @@
         <h3 class="hi">साझेदार बनें (CSR)<span class="en-mini">Partner (CSR)</span></h3>
         <p class="hi">अपनी संस्था की CSR प्रतिबद्धता के तहत एक पूर्ण कार्यक्रम धारा या एक विद्यालय को पूरे वर्ष के लिए प्रायोजित करें।<span class="en-line">Sponsor a full program stream or a school for the year as part of your organisation's CSR commitment.</span></p>
         <a href="#contact" class="btn btn-ghost hi" style="border-color:var(--teal-mid);color:var(--teal-mid);padding:11px 22px;font-size:0.85rem;">हमसे संपर्क करें<span class="en-mini">Talk to Us</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="whatsapp">
+  <div class="wrap">
+    <div class="community-box reveal">
+      <svg class="community-icon" viewBox="0 0 32 32" fill="currentColor"><path d="M16.04 3C9.37 3 3.96 8.41 3.96 15.08c0 2.22.6 4.3 1.65 6.09L3 29l7.98-2.56a12.1 12.1 0 005.06 1.1h.01c6.67 0 12.08-5.41 12.08-12.08C28.13 8.41 22.72 3 16.04 3zm0 21.9h-.01a10.7 10.7 0 01-5.46-1.5l-.39-.23-4.73 1.52 1.55-4.61-.25-.4a10.68 10.68 0 01-1.66-5.6C5.09 9.16 10.03 4.22 16.04 4.22c2.9 0 5.63 1.13 7.68 3.19a10.8 10.8 0 013.18 7.67c0 6.01-4.94 10.94-10.86 10.94zm5.96-8.18c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.51-.16-.73.17-.22.32-.84 1.06-1.03 1.28-.19.22-.38.24-.7.08-.33-.16-1.37-.5-2.61-1.6-.97-.86-1.62-1.92-1.81-2.25-.19-.32-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.62-.53-.54-.73-.55h-.62c-.22 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.69 0 1.58 1.16 3.11 1.32 3.33.16.22 2.28 3.48 5.53 4.88.77.33 1.37.53 1.84.68.77.25 1.48.21 2.03.13.62-.09 1.93-.79 2.2-1.55.27-.76.27-1.42.19-1.55-.08-.14-.29-.22-.62-.38z"/></svg>
+      <div class="community-text">
+        <span class="eyebrow hi" style="color:var(--marigold);">समुदाय से जुड़ें<span class="en-mini" style="color:var(--ganga);">Join the Community</span></span>
+        <h3 class="hi">व्हाट्सएप समुदाय<span class="en-line" style="color:var(--ganga);">WhatsApp Community</span></h3>
+        <p class="hi">कक्षाओं की सूचनाएँ, अध्ययन सामग्री, और अपडेट सीधे पाने के लिए हमारे व्हाट्सएप समुदाय से जुड़ें।<span class="en-line">Join our WhatsApp community to get class announcements, study materials, and updates directly.</span></p>
+        <div class="community-actions">
+          <a href="https://chat.whatsapp.com/Bvsy1BQNHllEkoYQJBR5iu?s=sh&amp;p=i&amp;ilr=2" class="btn btn-primary hi" target="_blank" rel="noopener">समुदाय जॉइन करें<span class="en-mini">Join Community</span></a>
+        </div>
       </div>
     </div>
   </div>

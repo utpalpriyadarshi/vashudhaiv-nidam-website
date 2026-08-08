@@ -45,6 +45,7 @@ and often an `id` used as a nav-anchor target:
 - `.heritage#heritage` — heritage/cultural content
 - `#stories` — testimonials/stories
 - `.involve#involve` — how to get involved
+- `.community#whatsapp` — WhatsApp Community join link
 - `#gallery` — photo gallery
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
