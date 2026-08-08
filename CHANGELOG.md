@@ -9,6 +9,11 @@ All notable changes to this project are documented here.
   linking to the foundation's WhatsApp Community invite link, plus a nav
   entry. First of the 4-step Phase 1 rollout in
   `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` (Step 1 of 4).
+- New `resources.html` learning-materials library page (Sanskrit, Vedas,
+  Upanishads, Audio, Class Recordings), linked from `index.html`'s nav and
+  footer. Ships with `[Placeholder]`/"Coming Soon" entries per category
+  since no real PDFs/audio exist yet. Step 2 of 4 of the Phase 1 rollout in
+  `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
 
 ### Changed
 - Reorganized the repo root: moved all source/reference material (scans,

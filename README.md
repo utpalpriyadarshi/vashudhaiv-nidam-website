@@ -44,15 +44,19 @@ registrar (Namecheap); see `ARCHITECTURE.md` for details.
 - `index.html` — the main single-page site
 - `team.html` — office bearers (patrons, president, secretary, treasurer,
   spokesperson, media in-charges, advisors), grouped by role
+- `resources.html` — learning-materials library (Sanskrit, Vedas, Upanishads,
+  Audio, Class Recordings), currently `[Placeholder]`/"Coming Soon" entries
+  pending real PDFs/audio
 - `privacy.html` — Privacy Policy
 - `terms.html` — Terms & Conditions
 - `refund-policy.html` — Donation & Refund Policy
 - `tax-exemption.html` — Tax Exemption (80G) info, including the Section 13
   "relative"/"specified person" disclosure rules for donations over ₹50,000
 
-All four legal pages plus `team.html` are linked from `index.html`'s nav
-and/or footer, are bilingual (Hindi/English), and share a lightweight common
-look with a "Back to Home" link — see `ARCHITECTURE.md` for how they're built.
+All four legal pages plus `team.html` and `resources.html` are linked from
+`index.html`'s nav and/or footer, are bilingual (Hindi/English), and share a
+lightweight common look with a "Back to Home" link — see `ARCHITECTURE.md`
+for how they're built.
 
 ## Content notes
 
@@ -72,7 +76,8 @@ look with a "Back to Home" link — see `ARCHITECTURE.md` for how they're built.
   testimonials and gallery photos.
 - Live classes / WhatsApp Community integration is being built in phased
   steps — see `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` for the plan and status.
-  Step 1 (WhatsApp Community section) has shipped.
+  Step 1 (WhatsApp Community section) has shipped; Step 2 (`resources.html`)
+  has shipped with placeholder content.
 
 ## Contributing to copy
 

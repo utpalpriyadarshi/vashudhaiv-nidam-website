@@ -108,10 +108,25 @@ different NGO's template and referenced that NGO's Delhi office/domain —
 all four pages now use this foundation's actual Haridwar registered
 address and Haridwar/Uttarakhand jurisdiction instead.
 
+## Resources page
+
+`resources.html` follows the same standalone/self-contained pattern as
+`team.html` and the legal pages (own inline CSS, sticky header with a
+"Back to Home" link, matching footer). It's Step 2 of the phased plan in
+`PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` — a learning-materials library
+grouped into five categories (Sanskrit, Vedas, Upanishads, Audio, Class
+Recordings). Per the plan, it shipped with `[Placeholder]`/"Coming Soon"
+entries rather than real download links, since no real PDFs/audio existed
+yet; swap in real files under `assets/pdf/...`/`assets/audio/...` and
+replace the "Coming Soon" status with an actual download link per entry
+when content is available. It's linked from `index.html`'s nav and footer
+"Explore" column.
+
 ## Assets
 
 - `index.html` — the main single-page site
 - `team.html` — office bearers page
+- `resources.html` — learning-materials library page
 - `reference-material/` — source/reference material only, gitignored and
   not part of the deployed site (nothing in this folder is referenced by
   any `<img>`/`url()` in the HTML — check before assuming otherwise):
