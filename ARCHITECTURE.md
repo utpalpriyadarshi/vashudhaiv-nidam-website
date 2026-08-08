@@ -46,6 +46,8 @@ and often an `id` used as a nav-anchor target:
 - `#stories` — testimonials/stories
 - `.involve#involve` — how to get involved
 - `.community#whatsapp` — WhatsApp Community join link
+- `.schedule#schedule` — weekly class schedule + countdown, rendered from
+  `data/schedule.json` by `js/schedule.js`/`js/countdown.js`
 - `#gallery` — photo gallery
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
@@ -123,11 +125,46 @@ when content is available. It's linked from `index.html`'s footer
 "Explore" column (not the top nav — kept out to avoid overcrowding the
 nav bar; see the note in `README.md`'s Content notes).
 
+## Weekly schedule
+
+`.schedule#schedule` in `index.html` is Step 3 of the phased plan in
+`PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` — a data-driven weekly class table
+with a live countdown to the next session, the first data-driven (rather
+than hand-edited) content on the site.
+
+- `data/schedule.json` — flat array of session objects (`topic_hi`,
+  `topic_en`, `teacher`, `datetime` with an explicit `+05:30` IST offset,
+  `platform` — one of `youtube`/`facebook`/`meet`/`instagram` — and `link`).
+  Currently seeded with dummy sessions starting 2026-09-01 and `link: "#"`
+  on every entry; edit this file directly to update the real schedule once
+  available (no separate admin UI — see Phase 1.5 in the plan doc for a
+  possible future upgrade to a Sheets-backed version).
+- `js/schedule.js` — fetches `data/schedule.json`, sorts by `datetime`,
+  and renders one `<tr>` per session into `#scheduleBody`, formatting each
+  time in both IST and the visitor's local timezone off the offset-aware
+  timestamp. An entry renders a "Coming Soon" status instead of a Join
+  button whenever its `link` is `"#"`/empty, so dummy sessions don't show
+  a dead-looking live link.
+- `js/countdown.js` — exposes `window.startCountdown(targetIso, elId)`,
+  called by `schedule.js` with the next upcoming session once loaded;
+  updates the `#scheduleCountdown` banner every 60s.
+- Two hardcoded `<tr>` rows stay in `index.html`'s `#scheduleBody` as a
+  fallback for the `file://` local-preview case (see "Local preview
+  caveat" in the plan doc) — `fetch()` can't load local JSON under
+  `file://`, so opening `index.html` by double-click shows the two
+  hardcoded rows; `js/schedule.js` replaces them once fetch succeeds
+  (works once deployed to GitHub Pages, or when served via
+  `npx serve .`/`python -m http.server` locally).
+
 ## Assets
 
 - `index.html` — the main single-page site
 - `team.html` — office bearers page
 - `resources.html` — learning-materials library page
+- `data/schedule.json` — weekly class schedule data (see "Weekly schedule"
+  above)
+- `js/schedule.js`, `js/countdown.js` — render the schedule table and its
+  countdown banner
 - `reference-material/` — source/reference material only, gitignored and
   not part of the deployed site (nothing in this folder is referenced by
   any `<img>`/`url()` in the HTML — check before assuming otherwise):

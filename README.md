@@ -32,6 +32,13 @@ or serve the directory with any static file server, e.g.:
 npx serve .
 ```
 
+**Note:** the Weekly Class Schedule section (`#schedule`) fetches
+`data/schedule.json` via `fetch()`, which browsers block under `file://`
+(double-clicking `index.html` directly). Use `npx serve .` or
+`python -m http.server` to preview that section with real data — opening
+the file directly still shows two hardcoded fallback rows so the section
+isn't empty.
+
 ## Deployment
 
 Hosted on GitHub Pages, serving from the `main` branch root. Every push to
@@ -77,11 +84,14 @@ for how they're built.
 - Live classes / WhatsApp Community integration is being built in phased
   steps — see `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` for the plan and status.
   Step 1 (WhatsApp Community section) has shipped; Step 2 (`resources.html`)
-  has shipped with placeholder content. Neither is in the top nav bar —
-  an earlier attempt added both there and pushed it past 10 items, which
+  has shipped with placeholder content; Step 3 (Weekly Schedule + countdown)
+  has shipped with dummy data (`data/schedule.json`, sessions starting
+  2026-09-01, every `link` set to `"#"`) — swap in the real schedule once
+  available. None of the three are in the top nav bar — an earlier attempt
+  added WhatsApp/Resources there and pushed it past 10 items, which
   overflowed at common desktop widths and cut off the Donate button/logo.
   WhatsApp Community is reachable via its own on-page section/button;
-  `resources.html` via the footer "Explore" column.
+  `resources.html` and the schedule via the footer "Explore" column.
 
 ## Contributing to copy
 

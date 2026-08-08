@@ -321,6 +321,27 @@
     .community-box{flex-direction:column;align-items:flex-start;padding:36px 28px;}
   }
 
+  /* ===== WEEKLY SCHEDULE ===== */
+  .schedule{background:var(--stone-dark);}
+  .schedule-note{color:#6a6a60;font-size:0.9rem;text-align:center;max-width:560px;margin:0 auto 28px;}
+  .schedule-countdown{
+    background:var(--teal-deep);color:var(--paper);border-radius:4px;
+    padding:18px 24px;text-align:center;margin-bottom:28px;font-size:1.05rem;font-weight:600;
+  }
+  .schedule-countdown .en-mini{color:var(--ganga);}
+  .schedule-table-wrap{overflow-x:auto;background:var(--paper);border-radius:4px;}
+  .schedule-table{width:100%;border-collapse:collapse;min-width:640px;}
+  .schedule-table th{
+    background:var(--teal-deep);color:var(--paper);text-align:left;
+    font-family:'Work Sans',sans-serif;font-size:0.72rem;letter-spacing:0.06em;
+    text-transform:uppercase;font-weight:600;padding:14px 18px;
+  }
+  .schedule-table td{padding:14px 18px;border-top:1px solid var(--stone-dark);vertical-align:middle;font-size:0.9rem;}
+  .schedule-table td p{margin:0;}
+  .schedule-status{
+    color:var(--brass);font-size:0.72rem;font-weight:600;letter-spacing:0.03em;white-space:nowrap;
+  }
+
   /* ===== GALLERY ===== */
   .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px;}
   .gallery-grid div{
@@ -711,6 +732,46 @@
   </div>
 </section>
 
+<section class="schedule" id="schedule">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow hi">साप्ताहिक कक्षाएँ<span class="en-mini">Weekly Classes</span></span>
+      <h2 class="hi">इस सप्ताह की कक्षा अनुसूची<span class="en-sub" style="color:#4a4a42;">This week's class schedule</span></h2>
+    </div>
+    <p class="schedule-note hi">[Placeholder समय-सारणी — असली विषय, अध्यापक व समय की जानकारी मिलते ही अपडेट की जाएगी]<span class="en-line" style="display:block;margin-top:4px;">[Placeholder schedule — will be updated with real topics, teachers, and times once available]</span></p>
+    <div class="schedule-countdown hi" id="scheduleCountdown">लोड हो रहा है…<span class="en-mini">Loading…</span></div>
+    <div class="schedule-table-wrap">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th class="hi">विषय<span class="en-mini" style="margin-top:2px;">Topic</span></th>
+            <th class="hi">अध्यापक<span class="en-mini" style="margin-top:2px;">Teacher</span></th>
+            <th class="hi">समय (IST व स्थानीय)<span class="en-mini" style="margin-top:2px;">Time (IST &amp; Local)</span></th>
+            <th class="hi">माध्यम<span class="en-mini" style="margin-top:2px;">Platform</span></th>
+            <th class="hi">जॉइन करें<span class="en-mini" style="margin-top:2px;">Join</span></th>
+          </tr>
+        </thead>
+        <tbody id="scheduleBody">
+          <tr>
+            <td><p class="hi">संस्कृत मूल पाठ<span class="en-mini">Sanskrit Basics</span></p></td>
+            <td>आचार्य जी<span class="en-mini" style="margin-top:0;">Acharya Ji</span></td>
+            <td><p class="hi">1 सितंबर, शाम 6:00 बजे IST<span class="en-mini">Sep 1, 6:00 PM IST</span></p></td>
+            <td class="hi">यूट्यूब<span class="en-mini" style="margin-top:0;">YouTube</span></td>
+            <td><span class="schedule-status hi">जल्द उपलब्ध<span class="en-mini" style="margin-top:0;">Coming Soon</span></span></td>
+          </tr>
+          <tr>
+            <td><p class="hi">वेद अध्ययन<span class="en-mini">Vedas Study</span></p></td>
+            <td>आचार्य जी<span class="en-mini" style="margin-top:0;">Acharya Ji</span></td>
+            <td><p class="hi">3 सितंबर, शाम 6:00 बजे IST<span class="en-mini">Sep 3, 6:00 PM IST</span></p></td>
+            <td class="hi">फेसबुक<span class="en-mini" style="margin-top:0;">Facebook</span></td>
+            <td><span class="schedule-status hi">जल्द उपलब्ध<span class="en-mini" style="margin-top:0;">Coming Soon</span></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <section id="gallery">
   <div class="wrap">
     <div class="section-head center">
@@ -791,7 +852,7 @@
       </div>
       <div>
         <h5 class="hi">जानें<span class="en-mini">Explore</span></h5>
-        <ul><li><a href="#about" class="hi">हमारे बारे में<span class="en-mini">About Us</span></a></li><li><a href="team.html" class="hi">हमारी टीम<span class="en-mini">Our Team</span></a></li><li><a href="resources.html" class="hi">अध्ययन सामग्री<span class="en-mini">Resources</span></a></li><li><a href="#programs" class="hi">कार्यक्रम<span class="en-mini">Programs</span></a></li><li><a href="#heritage" class="hi">विरासत केंद्र<span class="en-mini">Heritage Hub</span></a></li><li><a href="#stories" class="hi">कहानियाँ<span class="en-mini">Stories</span></a></li></ul>
+        <ul><li><a href="#about" class="hi">हमारे बारे में<span class="en-mini">About Us</span></a></li><li><a href="team.html" class="hi">हमारी टीम<span class="en-mini">Our Team</span></a></li><li><a href="resources.html" class="hi">अध्ययन सामग्री<span class="en-mini">Resources</span></a></li><li><a href="#schedule" class="hi">कक्षा अनुसूची<span class="en-mini">Class Schedule</span></a></li><li><a href="#programs" class="hi">कार्यक्रम<span class="en-mini">Programs</span></a></li><li><a href="#heritage" class="hi">विरासत केंद्र<span class="en-mini">Heritage Hub</span></a></li><li><a href="#stories" class="hi">कहानियाँ<span class="en-mini">Stories</span></a></li></ul>
       </div>
       <div>
         <h5 class="hi">जुड़ें<span class="en-mini">Involved</span></h5>
@@ -810,6 +871,8 @@
   </div>
 </footer>
 
+<script src="js/countdown.js"></script>
+<script src="js/schedule.js"></script>
 <script>
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');

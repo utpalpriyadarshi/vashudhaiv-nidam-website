@@ -27,7 +27,7 @@ step ships so nothing gets lost between sessions.
 |---|---|---|---|---|
 | 1 | WhatsApp Community (`.community#whatsapp` in `index.html`) | `feature/whatsapp-community` | WhatsApp Community invite link | **Done — merged to main** |
 | 2 | Resources page (`resources.html`) | `feature/resources-page` | None — can start with `[Placeholder]` content | **Done — merged to main** |
-| 3 | Weekly Schedule + countdown (`.schedule#schedule` in `index.html`, `data/schedule.json`, `js/schedule.js`, `js/countdown.js`) | `feature/class-schedule` | Real weekly schedule data | **Not started** |
+| 3 | Weekly Schedule + countdown (`.schedule#schedule` in `index.html`, `data/schedule.json`, `js/schedule.js`, `js/countdown.js`) | `feature/class-schedule` | Real weekly schedule data | **Built with dummy data — pending review/merge** |
 | 4 | Live Now (`.live-now#live` in `index.html`) | `feature/live-now` | YouTube/Facebook/Instagram/Meet links | **Not started** |
 
 Why this order: Step 1 needs the least missing information (a WhatsApp link
@@ -164,7 +164,11 @@ works fine once deployed to GitHub Pages (`https://`). Mitigations:
   like other unfilled content on this site (testimonials, gallery), swap in
   real PDFs/audio later
 - **Step 3**: real weekly schedule (topics, teachers, days/times) to seed
-  `schedule.json`
+  `schedule.json`. Built ahead of this with dummy sessions (starting
+  2026-09-01, `link: "#"` on every entry, rendering "Coming Soon" instead
+  of a Join button) so the table/countdown mechanism could ship now —
+  swap in real data by editing `data/schedule.json` directly, no code
+  changes needed.
 - **Step 4**: YouTube channel URL/handle, Facebook Page URL, Instagram
   profile URL, Google Meet recurring link(s) (confirm if these differ per
   class)

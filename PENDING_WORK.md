@@ -46,6 +46,14 @@ delete them) as each is resolved.
    currently profiles Maharshi Dayanand Saraswati as spiritual
    inspiration, not a photo/bio of Shri Yogendra Medhavi personally —
    confirm whether a personal founder bio/photo is wanted in addition).
+8. **Weekly class schedule dummy data** (`data/schedule.json`) — 5 dummy
+   sessions starting 2026-09-01 (topics like "Sanskrit Basics", teacher
+   "Acharya Ji", every `link` set to `"#"` showing "Coming Soon"). Built
+   ahead of real schedule data per
+   `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` so the table/countdown mechanism
+   could ship now. Replace with real topics/teachers/days/times and real
+   Join links once available — just edit the JSON file directly, no code
+   changes needed.
 
 ## Done
 

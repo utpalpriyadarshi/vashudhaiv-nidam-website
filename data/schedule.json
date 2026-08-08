@@ -1,0 +1,42 @@
+[
+  {
+    "topic_hi": "संस्कृत मूल पाठ",
+    "topic_en": "Sanskrit Basics",
+    "teacher": "आचार्य जी / Acharya Ji",
+    "datetime": "2026-09-01T18:00:00+05:30",
+    "platform": "youtube",
+    "link": "#"
+  },
+  {
+    "topic_hi": "वेद अध्ययन",
+    "topic_en": "Vedas Study",
+    "teacher": "आचार्य जी / Acharya Ji",
+    "datetime": "2026-09-03T18:00:00+05:30",
+    "platform": "facebook",
+    "link": "#"
+  },
+  {
+    "topic_hi": "उपनिषद चर्चा",
+    "topic_en": "Upanishad Discussion",
+    "teacher": "आचार्य जी / Acharya Ji",
+    "datetime": "2026-09-05T18:00:00+05:30",
+    "platform": "meet",
+    "link": "#"
+  },
+  {
+    "topic_hi": "योग सत्र",
+    "topic_en": "Yoga Session",
+    "teacher": "योग शिक्षक / Yoga Instructor",
+    "datetime": "2026-09-06T07:00:00+05:30",
+    "platform": "youtube",
+    "link": "#"
+  },
+  {
+    "topic_hi": "सामान्य प्रश्नोत्तर",
+    "topic_en": "Open Q&A",
+    "teacher": "टीम / Team",
+    "datetime": "2026-09-08T18:00:00+05:30",
+    "platform": "facebook",
+    "link": "#"
+  }
+]

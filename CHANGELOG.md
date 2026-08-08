@@ -14,6 +14,16 @@ All notable changes to this project are documented here.
   Ships with `[Placeholder]`/"Coming Soon" entries per category since no
   real PDFs/audio exist yet. Step 2 of 4 of the Phase 1 rollout in
   `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
+- New "Weekly Class Schedule" section (`.schedule#schedule`) in
+  `index.html`, with a live countdown to the next session and a table
+  rendered from `data/schedule.json` by the new `js/schedule.js` and
+  `js/countdown.js`. Ships with dummy sessions starting 2026-09-01 and a
+  "Coming Soon" status in place of a real Join link on every entry (all
+  `link` values are `"#"`) — replace with real topics/teachers/times and
+  links once available. Two hardcoded fallback rows stay in `index.html`
+  for the `file://` local-preview case (`fetch()` can't load local JSON
+  there). Linked from `index.html`'s footer, not the top nav. Step 3 of 4
+  of the Phase 1 rollout in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
 
 ### Fixed
 - Top nav bar was overflowing at common desktop widths (~1366px) after the
