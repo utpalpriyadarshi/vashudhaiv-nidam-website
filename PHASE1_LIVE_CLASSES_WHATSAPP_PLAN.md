@@ -27,7 +27,7 @@ step ships so nothing gets lost between sessions.
 |---|---|---|---|---|
 | 1 | WhatsApp Community (`.community#whatsapp` in `index.html`) | `feature/whatsapp-community` | WhatsApp Community invite link | **Done — merged to main** |
 | 2 | Resources page (`resources.html`) | `feature/resources-page` | None — can start with `[Placeholder]` content | **Done — merged to main** |
-| 3 | Weekly Schedule + countdown (`.schedule#schedule` in `index.html`, `data/schedule.json`, `js/schedule.js`, `js/countdown.js`) | `feature/class-schedule` | Real weekly schedule data | **Built with dummy data — pending review/merge** |
+| 3 | Weekly Schedule + countdown (`.schedule#schedule` in `index.html`, `data/schedule.json`, `js/schedule.js`, `js/countdown.js`) | `feature/class-schedule` | Real weekly schedule data | **Done — merged to main, running on dummy data (see `PENDING_WORK.md`)** |
 | 4 | Live Now (`.live-now#live` in `index.html`) | `feature/live-now` | YouTube/Facebook/Instagram/Meet links | **Not started** |
 
 Why this order: Step 1 needs the least missing information (a WhatsApp link
