@@ -34,6 +34,12 @@ All notable changes to this project are documented here.
   in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
 
 ### Fixed
+- Header brand subtitle in `index.html` had a stray "·" separator before
+  "Haridwar" on its English line; removed so it reads "Vasudhaiv Nidam
+  Foundation Haridwar".
+- Sanskrit signature line ("Krinvanto Vishwam Aryam") in `index.html` had a
+  space between "Vishwam" and "Aryam" in both the Hindi/Sanskrit and English
+  text; removed to match the intended rendering.
 - Top nav bar was overflowing at common desktop widths (~1366px) after the
   WhatsApp/Resources additions pushed it to 12 items, cutting off the
   Donate button and logo. Reverted the nav bar to its original 10 items —
