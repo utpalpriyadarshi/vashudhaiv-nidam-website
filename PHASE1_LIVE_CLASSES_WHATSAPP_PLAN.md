@@ -28,7 +28,7 @@ step ships so nothing gets lost between sessions.
 | 1 | WhatsApp Community (`.community#whatsapp` in `index.html`) | `feature/whatsapp-community` | WhatsApp Community invite link | **Done — merged to main** |
 | 2 | Resources page (`resources.html`) | `feature/resources-page` | None — can start with `[Placeholder]` content | **Done — merged to main** |
 | 3 | Weekly Schedule + countdown (`.schedule#schedule` in `index.html`, `data/schedule.json`, `js/schedule.js`, `js/countdown.js`) | `feature/class-schedule` | Real weekly schedule data | **Done — merged to main, running on dummy data (see `PENDING_WORK.md`)** |
-| 4 | Live Now (`.live-now#live` in `index.html`) | `feature/live-now` | YouTube/Facebook/Instagram/Meet links | **Not started** |
+| 4 | Live Now (`.live-now#live` in `index.html`) | `feature/live-now` | YouTube/Facebook/Instagram/Meet links | **Built with placeholder cards — pending review/merge** |
 
 Why this order: Step 1 needs the least missing information (a WhatsApp link
 may already exist) and Step 2 can start today with placeholders like other
@@ -171,7 +171,11 @@ works fine once deployed to GitHub Pages (`https://`). Mitigations:
   changes needed.
 - **Step 4**: YouTube channel URL/handle, Facebook Page URL, Instagram
   profile URL, Google Meet recurring link(s) (confirm if these differ per
-  class)
+  class). Built ahead of this as four static placeholder cards (no
+  `<iframe>` embeds or link-out buttons yet, just a "Coming Soon" status
+  per platform) so the section could ship now — once real URLs arrive,
+  swap the YouTube/Facebook cards for their self-updating live embeds and
+  the Instagram/Meet cards for link-out buttons, per the design above.
 
 ## Phase 1.5 — Lightweight CMS (optional, before considering a backend)
 

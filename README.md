@@ -87,11 +87,14 @@ for how they're built.
   has shipped with placeholder content; Step 3 (Weekly Schedule + countdown)
   has shipped with dummy data (`data/schedule.json`, sessions starting
   2026-09-01, every `link` set to `"#"`) — swap in the real schedule once
-  available. None of the three are in the top nav bar — an earlier attempt
-  added WhatsApp/Resources there and pushed it past 10 items, which
-  overflowed at common desktop widths and cut off the Donate button/logo.
-  WhatsApp Community is reachable via its own on-page section/button;
-  `resources.html` and the schedule via the footer "Explore" column.
+  available; Step 4 (Live Now — YouTube/Facebook/Instagram/Meet) has shipped
+  as four static "Coming Soon" placeholder cards, since no real platform
+  URLs exist yet — swap in real embeds/links once available. None of the
+  four are in the top nav bar — an earlier attempt added WhatsApp/Resources
+  there and pushed it past 10 items, which overflowed at common desktop
+  widths and cut off the Donate button/logo. WhatsApp Community is
+  reachable via its own on-page section/button; `resources.html`, the
+  schedule, and Live Now via the footer "Explore" column.
 
 ## Contributing to copy
 

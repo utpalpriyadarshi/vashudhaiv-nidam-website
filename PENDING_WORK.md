@@ -54,6 +54,14 @@ delete them) as each is resolved.
    could ship now. Replace with real topics/teachers/days/times and real
    Join links once available — just edit the JSON file directly, no code
    changes needed.
+9. **Live Now section** (`.live-now#live`, `index.html`) — four static
+   "Coming Soon" placeholder cards (YouTube, Facebook, Instagram, Google
+   Meet), no real channel/page/profile/meeting URLs yet. Built ahead of
+   real platform URLs per `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`. Once
+   URLs are available: swap the YouTube card for the channel's Live-tab
+   `<iframe>` embed, the Facebook card for the Page Plugin embed (both
+   self-update live/offline, no API key needed), and the Instagram/Meet
+   cards for "Watch on Instagram"/"Join Meet" link-out buttons.
 
 ## Done
 

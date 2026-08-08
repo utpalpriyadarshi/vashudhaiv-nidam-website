@@ -24,6 +24,14 @@ All notable changes to this project are documented here.
   for the `file://` local-preview case (`fetch()` can't load local JSON
   there). Linked from `index.html`'s footer, not the top nav. Step 3 of 4
   of the Phase 1 rollout in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
+- New "Live Now" section (`.live-now#live`) in `index.html` — four cards
+  (YouTube, Facebook, Instagram, Google Meet), each with a brand-colored
+  platform icon and a "Coming Soon" status, since no real channel/page/
+  profile/meeting URLs exist yet. Once available, per the plan: swap the
+  YouTube/Facebook cards for their self-updating live embeds, and the
+  Instagram/Meet cards for link-out buttons. Linked from `index.html`'s
+  footer, not the top nav. Step 4 of 4 (final step) of the Phase 1 rollout
+  in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
 
 ### Fixed
 - Top nav bar was overflowing at common desktop widths (~1366px) after the

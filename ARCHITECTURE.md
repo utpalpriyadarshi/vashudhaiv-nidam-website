@@ -48,6 +48,8 @@ and often an `id` used as a nav-anchor target:
 - `.community#whatsapp` — WhatsApp Community join link
 - `.schedule#schedule` — weekly class schedule + countdown, rendered from
   `data/schedule.json` by `js/schedule.js`/`js/countdown.js`
+- `.live-now#live` — "Watch live now" platform cards (YouTube, Facebook,
+  Instagram, Google Meet)
 - `#gallery` — photo gallery
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
@@ -155,6 +157,24 @@ than hand-edited) content on the site.
   hardcoded rows; `js/schedule.js` replaces them once fetch succeeds
   (works once deployed to GitHub Pages, or when served via
   `npx serve .`/`python -m http.server` locally).
+
+## Live Now
+
+`.live-now#live` in `index.html` is Step 4 (last step) of the phased plan
+in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` — four static cards (YouTube,
+Facebook, Instagram, Google Meet), each with a platform icon (colored with
+that platform's actual brand color, matching the precedent set by the
+WhatsApp icon and the Contact section's WhatsApp button), a one-line
+description, and a "Coming Soon" status badge (reusing `.schedule-status`).
+
+Built with placeholder content since no real platform URLs exist yet — no
+`<iframe>` embeds or link-out buttons. Per the plan, once the real URLs are
+available: swap the YouTube card for the channel's Live-tab `<iframe>`
+embed, the Facebook card for the Page Plugin embed (both self-update
+live/offline with no API key needed), and the Instagram/Meet cards for
+"Watch on Instagram"/"Join Meet" link-out buttons. Linked from
+`index.html`'s footer, not the top nav (same reasoning as Resources/
+Schedule — see the note in `README.md`'s Content notes).
 
 ## Assets
 
