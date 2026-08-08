@@ -26,7 +26,7 @@ step ships so nothing gets lost between sessions.
 | Step | Section | Branch (suggested name) | Depends on | Status |
 |---|---|---|---|---|
 | 1 | WhatsApp Community (`.community#whatsapp` in `index.html`) | `feature/whatsapp-community` | WhatsApp Community invite link | **Done — merged to main** |
-| 2 | Resources page (`resources.html`) | `feature/resources-page` | None — can start with `[Placeholder]` content | **Built — pending review/merge** |
+| 2 | Resources page (`resources.html`) | `feature/resources-page` | None — can start with `[Placeholder]` content | **Done — merged to main** |
 | 3 | Weekly Schedule + countdown (`.schedule#schedule` in `index.html`, `data/schedule.json`, `js/schedule.js`, `js/countdown.js`) | `feature/class-schedule` | Real weekly schedule data | **Not started** |
 | 4 | Live Now (`.live-now#live` in `index.html`) | `feature/live-now` | YouTube/Facebook/Instagram/Meet links | **Not started** |
 
