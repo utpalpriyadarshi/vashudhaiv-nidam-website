@@ -77,7 +77,11 @@ for how they're built.
 - Live classes / WhatsApp Community integration is being built in phased
   steps — see `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` for the plan and status.
   Step 1 (WhatsApp Community section) has shipped; Step 2 (`resources.html`)
-  has shipped with placeholder content.
+  has shipped with placeholder content. Neither is in the top nav bar —
+  an earlier attempt added both there and pushed it past 10 items, which
+  overflowed at common desktop widths and cut off the Donate button/logo.
+  WhatsApp Community is reachable via its own on-page section/button;
+  `resources.html` via the footer "Explore" column.
 
 ## Contributing to copy
 

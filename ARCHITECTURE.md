@@ -119,8 +119,9 @@ Recordings). Per the plan, it shipped with `[Placeholder]`/"Coming Soon"
 entries rather than real download links, since no real PDFs/audio existed
 yet; swap in real files under `assets/pdf/...`/`assets/audio/...` and
 replace the "Coming Soon" status with an actual download link per entry
-when content is available. It's linked from `index.html`'s nav and footer
-"Explore" column.
+when content is available. It's linked from `index.html`'s footer
+"Explore" column (not the top nav — kept out to avoid overcrowding the
+nav bar; see the note in `README.md`'s Content notes).
 
 ## Assets
 

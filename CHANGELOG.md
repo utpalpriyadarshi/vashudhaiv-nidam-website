@@ -6,14 +6,21 @@ All notable changes to this project are documented here.
 
 ### Added
 - New "WhatsApp Community" section (`.community#whatsapp`) in `index.html`,
-  linking to the foundation's WhatsApp Community invite link, plus a nav
-  entry. First of the 4-step Phase 1 rollout in
-  `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` (Step 1 of 4).
+  linking to the foundation's WhatsApp Community invite link. First of the
+  4-step Phase 1 rollout in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md` (Step 1
+  of 4).
 - New `resources.html` learning-materials library page (Sanskrit, Vedas,
-  Upanishads, Audio, Class Recordings), linked from `index.html`'s nav and
-  footer. Ships with `[Placeholder]`/"Coming Soon" entries per category
-  since no real PDFs/audio exist yet. Step 2 of 4 of the Phase 1 rollout in
+  Upanishads, Audio, Class Recordings), linked from `index.html`'s footer.
+  Ships with `[Placeholder]`/"Coming Soon" entries per category since no
+  real PDFs/audio exist yet. Step 2 of 4 of the Phase 1 rollout in
   `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
+
+### Fixed
+- Top nav bar was overflowing at common desktop widths (~1366px) after the
+  WhatsApp/Resources additions pushed it to 12 items, cutting off the
+  Donate button and logo. Reverted the nav bar to its original 10 items —
+  WhatsApp Community and Resources are reachable via their own on-page
+  section/button and the footer, not the top nav.
 
 ### Changed
 - Reorganized the repo root: moved all source/reference material (scans,
