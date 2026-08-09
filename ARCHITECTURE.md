@@ -213,12 +213,20 @@ expected and not a bug.
 - **Custom domain:** `vasudhaivnidam.org`, configured via the root-level
   `CNAME` file in this repo. The site was originally launched on
   `vashudhaivnidam.org` (registered with an extra "h" by mistake) and
-  switched to the correctly-spelled domain pre-launch; the old domain now
-  redirects (301) to the new one at the registrar level.
-- **DNS (Namecheap, Advanced DNS tab):**
+  switched to the correctly-spelled domain pre-launch.
+- **DNS for `vasudhaivnidam.org` (Namecheap, Advanced DNS tab):**
   - `A` records for `@` → GitHub Pages IPs
     (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`)
   - `CNAME` record for `www` → `utpalpriyadarshi.github.io`
+- **Old domain redirect:** `vashudhaivnidam.org` now redirects (301,
+  HTTP and HTTPS) to `https://vasudhaivnidam.org`. Its nameservers were
+  moved from Namecheap to Cloudflare (free plan) because Namecheap's free
+  URL-forwarding only serves plain HTTP, not HTTPS. A Cloudflare Redirect
+  Rule matches requests to `vashudhaivnidam.org` and rewrites them to
+  `https://vasudhaivnidam.org` with the path preserved; DNS records for
+  that zone (apex + `www`, both proxied) point at placeholder IPs since
+  only the redirect rule matters, not an actual origin. Its Namecheap
+  email-forwarding MX/TXT records were left untouched and unproxied.
 - **HTTPS:** fully enforced (`https_enforced: true`) with a GitHub-issued
   Let's Encrypt certificate — the site force-redirects to
   `https://vasudhaivnidam.org`
