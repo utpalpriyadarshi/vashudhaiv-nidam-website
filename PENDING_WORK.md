@@ -39,16 +39,14 @@ delete them) as each is resolved.
    initial-letter circles instead of real photos (4 patrons, president,
    vice president, secretary + joint secretary, treasurer + joint
    treasurer, spokesperson, 3 media in-charges, 2 advisors).
-5. **Site-wide "placeholder design" banner** at the top of `index.html` —
-   still present, not yet removed.
-6. **Footer copyright note** (`index.html`) — still reads
+5. **Footer copyright note** (`index.html`) — still reads
    "[Placeholder सामग्री — केवल डिज़ाइन समीक्षा हेतु]".
-7. **Founder's photo/bio accuracy** — worth double-checking against the
+6. **Founder's photo/bio accuracy** — worth double-checking against the
    actual founder before launch (the Founder section on the homepage
    currently profiles Maharshi Dayanand Saraswati as spiritual
    inspiration, not a photo/bio of Shri Yogendra Medhavi personally —
    confirm whether a personal founder bio/photo is wanted in addition).
-8. **Weekly class schedule dummy data** (`data/schedule.json`) — 5 dummy
+7. **Weekly class schedule dummy data** (`data/schedule.json`) — 5 dummy
    sessions starting 2026-09-01 (topics like "Sanskrit Basics", teacher
    "Acharya Ji", every `link` set to `"#"` showing "Coming Soon"). Built
    ahead of real schedule data per
@@ -56,7 +54,7 @@ delete them) as each is resolved.
    could ship now. Replace with real topics/teachers/days/times and real
    Join links once available — just edit the JSON file directly, no code
    changes needed.
-9. **Live Now section** (`.live-now#live`, `index.html`) — four static
+8. **Live Now section** (`.live-now#live`, `index.html`) — four static
    "Coming Soon" placeholder cards (YouTube, Facebook, Instagram, Google
    Meet), no real channel/page/profile/meeting URLs yet. Built ahead of
    real platform URLs per `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`. Once
@@ -90,3 +88,5 @@ delete them) as each is resolved.
   HTTP, not HTTPS) — a Redirect Rule matches `vashudhaivnidam.org`
   requests and rewrites them to `https://vasudhaivnidam.org` with path
   preserved.
+- Site-wide "placeholder design" banner removed from the top of
+  `index.html` (`.placeholder-note` div and its CSS rule).

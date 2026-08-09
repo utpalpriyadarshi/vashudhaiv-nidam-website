@@ -13,6 +13,10 @@ All notable changes to this project are documented here.
   up to 301-redirect to the new one at the registrar (Namecheap) so
   existing links/typos still resolve.
 
+### Removed
+- Site-wide "placeholder design" banner (`.placeholder-note`) from the top
+  of `index.html`.
+
 ### Added
 - New "WhatsApp Community" section (`.community#whatsapp`) in `index.html`,
   linking to the foundation's WhatsApp Community invite link. First of the
