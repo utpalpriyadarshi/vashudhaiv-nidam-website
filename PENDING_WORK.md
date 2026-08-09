@@ -35,8 +35,10 @@ delete them) as each is resolved.
      an external album (Google Photos/Drive) instead, to avoid repo bloat.
    - No JSON/data file needed for a fixed grid this size — hand-edited HTML
      is consistent with how the rest of this site's content is maintained.
-4. **Team photos** (`team.html`) — all 18 entries currently show
-   initial-letter circles instead of real photos.
+4. **Team photos** (`team.html`) — all 16 entries currently show
+   initial-letter circles instead of real photos (4 patrons, president,
+   vice president, secretary + joint secretary, treasurer + joint
+   treasurer, spokesperson, 3 media in-charges, 2 advisors).
 5. **Site-wide "placeholder design" banner** at the top of `index.html` —
    still present, not yet removed.
 6. **Footer copyright note** (`index.html`) — still reads
