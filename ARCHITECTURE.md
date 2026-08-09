@@ -210,14 +210,17 @@ expected and not a bug.
 - **Host:** GitHub Pages, serving the `main` branch from the repo root (`/`)
 - **Repo:** `utpalpriyadarshi/vashudhaiv-nidam-website` (public — required
   for Pages on GitHub's free plan)
-- **Custom domain:** `vashudhaivnidam.org`, configured via the root-level
-  `CNAME` file in this repo
+- **Custom domain:** `vasudhaivnidam.org`, configured via the root-level
+  `CNAME` file in this repo. The site was originally launched on
+  `vashudhaivnidam.org` (registered with an extra "h" by mistake) and
+  switched to the correctly-spelled domain pre-launch; the old domain now
+  redirects (301) to the new one at the registrar level.
 - **DNS (Namecheap, Advanced DNS tab):**
   - `A` records for `@` → GitHub Pages IPs
     (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`)
   - `CNAME` record for `www` → `utpalpriyadarshi.github.io`
 - **HTTPS:** fully enforced (`https_enforced: true`) with a GitHub-issued
   Let's Encrypt certificate — the site force-redirects to
-  `https://vashudhaivnidam.org`
+  `https://vasudhaivnidam.org`
 
 There is no CI pipeline — every push to `main` is live within moments.

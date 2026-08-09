@@ -12,7 +12,7 @@ assets. No build step, no frameworks, no package manager — plain HTML/CSS/JS. 
 no test suite and no lint/build/run command; editing is done directly in the HTML files
 and previewed by opening them in a browser.
 
-**Live at https://vashudhaivnidam.org (GitHub Pages, custom domain).**
+**Live at https://vasudhaivnidam.org (GitHub Pages, custom domain).**
 
 ## Branching workflow — read before editing
 
@@ -89,8 +89,8 @@ small inline `<script>` at the end (~line 762). There are no external JS depende
 
 No CI/build pipeline. Deployed via GitHub Pages (chosen over Netlify after a Netlify
 config-parsing failure), serving from `main` branch root (`/`), with the custom domain
-`vashudhaivnidam.org` configured via a root-level `CNAME` file plus GitHub Pages' standard
+`vasudhaivnidam.org` configured via a root-level `CNAME` file plus GitHub Pages' standard
 A/CNAME DNS records (Namecheap). Every push to `main` deploys directly — no build step in
 between. HTTPS is fully enforced (`https_enforced: true`) — the site force-redirects to
-`https://vashudhaivnidam.org`; verify via
+`https://vasudhaivnidam.org`; verify via
 `gh api repos/utpalpriyadarshi/vashudhaiv-nidam-website/pages` if ever in doubt.

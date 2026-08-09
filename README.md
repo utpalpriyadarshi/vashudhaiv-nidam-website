@@ -5,7 +5,7 @@ Official website for the Vasudhaiv Nidam Foundation, Haridwar — a bilingual
 mission, founder, team, objectives, programs, heritage, stories, and
 contact/donation information.
 
-**Live site:** https://vashudhaivnidam.org
+**Live site:** https://vasudhaivnidam.org
 
 ## Organization details
 

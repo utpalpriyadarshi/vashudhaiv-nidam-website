@@ -4,6 +4,15 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Changed
+- Switched the primary custom domain from `vashudhaivnidam.org` (registered
+  with an extra "h" by mistake) to the correctly-spelled
+  `vasudhaivnidam.org`, updating the root `CNAME` file and every reference
+  in `index.html`, `privacy.html`, and project docs. Done pre-launch,
+  before real backlinks/print materials accumulate. The old domain is set
+  up to 301-redirect to the new one at the registrar (Namecheap) so
+  existing links/typos still resolve.
+
 ### Added
 - New "WhatsApp Community" section (`.community#whatsapp`) in `index.html`,
   linking to the foundation's WhatsApp Community invite link. First of the

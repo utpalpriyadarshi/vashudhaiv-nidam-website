@@ -62,6 +62,31 @@ delete them) as each is resolved.
    `<iframe>` embed, the Facebook card for the Page Plugin embed (both
    self-update live/offline, no API key needed), and the Instagram/Meet
    cards for "Watch on Instagram"/"Join Meet" link-out buttons.
+10. **Domain spelling mismatch — switch in progress.** The foundation's
+    name is spelled "Vasudhaiv Nidam" (no "h" after the "s"), but the live
+    domain `vashudhaivnidam.org` was registered with an extra "h" by
+    mistake. Decision made: switch primary to the correctly-spelled
+    `vasudhaivnidam.org` (already purchased on Namecheap) while the site
+    is still pre-launch/placeholder-banner stage, before real
+    backlinks/print materials accumulate. Steps:
+    - [ ] Add DNS records for `vasudhaivnidam.org` at Namecheap (Advanced
+      DNS): `A` records for `@` → GitHub Pages IPs
+      (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`,
+      `185.199.111.153`), `CNAME` for `www` → `utpalpriyadarshi.github.io`.
+      **(user action, in progress)**
+    - [x] Update this repo's `CNAME` file and all docs/copy referencing
+      the domain to `vasudhaivnidam.org` (branch
+      `infra/switch-primary-domain`).
+    - [ ] Wait for DNS to propagate, then merge the branch to `main` so
+      GitHub Pages picks up the new custom domain, and wait for the new
+      HTTPS certificate to be issued/approved.
+    - [ ] Set up a Namecheap domain redirect (301, URL Redirect record)
+      from `vashudhaivnidam.org` → `vasudhaivnidam.org` so old
+      links/typos still resolve, once the new domain is confirmed live.
+    Note: GitHub Pages only serves one canonical custom domain at a time
+    (set via the repo's `CNAME` file), so the redirect for the old domain
+    has to happen at the registrar/DNS level (Namecheap), not in this
+    repo.
 
 ## Done
 
