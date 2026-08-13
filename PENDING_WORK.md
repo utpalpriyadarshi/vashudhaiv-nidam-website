@@ -54,6 +54,13 @@ delete them) as each is resolved.
    could ship now. Replace with real topics/teachers/days/times and real
    Join links once available — just edit the JSON file directly, no code
    changes needed.
+   - **Decision (2026-08-13):** Google Meet links will use **one single
+     recurring Meet link** reused across every `platform: "meet"` row,
+     rather than a separate link per class. Once that recurring link
+     exists (create a recurring Google Calendar event, grab its stable
+     `meet.google.com/xxx-xxxx-xxx` URL), paste it into every `meet` row's
+     `link` field in `data/schedule.json` — still just a JSON edit, no
+     code changes.
 8. **Live Now section** (`.live-now#live`, `index.html`) — four static
    "Coming Soon" placeholder cards (YouTube, Facebook, Instagram, Google
    Meet), no real channel/page/profile/meeting URLs yet. Built ahead of
@@ -61,8 +68,8 @@ delete them) as each is resolved.
    URLs are available: swap the YouTube card for the channel's Live-tab
    `<iframe>` embed, the Facebook card for the Page Plugin embed (both
    self-update live/offline, no API key needed), and the Instagram/Meet
-   cards for "Watch on Instagram"/"Join Meet" link-out buttons.
-
+   cards for "Watch on Instagram"/"Join Meet" link-out buttons (Meet card
+   uses the same single recurring link as item 7 above, once received).
 ## Done
 
 - Registration no., address, phone confirmed and filled in.
@@ -90,3 +97,11 @@ delete them) as each is resolved.
   preserved.
 - Site-wide "placeholder design" banner removed from the top of
   `index.html` (`.placeholder-note` div and its CSS rule).
+- Donation UPI scan-and-pay QR code added to the Contact section
+  (`assets/qr/donation-qr.jpg`, cropped from the ICICI Bank standee,
+  verified to decode to the same UPI ID already published as text).
+- Upanishad Pathan WhatsApp group added as a "Subject Groups" card under
+  the WhatsApp Community section, alongside the general community invite.
+- New "Upcoming Events" section (`.upcoming-events#events`) added with
+  the Thaila Kranti (jute bag) campaign — 500 bags, distributing 15th
+  August at the office premises in Haridwar.

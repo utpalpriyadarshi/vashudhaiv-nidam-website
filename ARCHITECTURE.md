@@ -45,11 +45,16 @@ and often an `id` used as a nav-anchor target:
 - `.heritage#heritage` — heritage/cultural content
 - `#stories` — testimonials/stories
 - `.involve#involve` — how to get involved
-- `.community#whatsapp` — WhatsApp Community join link
+- `.community#whatsapp` — WhatsApp Community join link, plus a
+  `.subject-groups` block for subject-specific groups (currently the
+  Upanishad Pathan/recitation group)
 - `.schedule#schedule` — weekly class schedule + countdown, rendered from
   `data/schedule.json` by `js/schedule.js`/`js/countdown.js`
 - `.live-now#live` — "Watch live now" platform cards (YouTube, Facebook,
   Instagram, Google Meet)
+- `.upcoming-events#events` — announcements for future campaigns/events,
+  each an `.event-card` with an image, description, and date/location
+  meta line; currently seeded with the "Thaila Kranti" jute bag campaign
 - `#gallery` — photo gallery
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
@@ -176,6 +181,17 @@ live/offline with no API key needed), and the Instagram/Meet cards for
 `index.html`'s footer, not the top nav (same reasoning as Resources/
 Schedule — see the note in `README.md`'s Content notes).
 
+## Upcoming Events
+
+`.upcoming-events#events` in `index.html` is a general-purpose section for
+announcing future campaigns/programs — not tied to the Phase 1 plan above.
+Each announcement is an `.event-card` (image + bilingual description + an
+`.event-meta` line for date/location), reusing the same `hi`/`en-line`
+bilingual convention as the rest of the site. Currently seeded with one
+card, the "Thaila Kranti" jute-bag distribution campaign (15th August,
+office premises, Haridwar). Not in the top nav, same reasoning as
+Schedule/Live Now.
+
 ## Assets
 
 - `index.html` — the main single-page site
@@ -185,9 +201,16 @@ Schedule — see the note in `README.md`'s Content notes).
   above)
 - `js/schedule.js`, `js/countdown.js` — render the schedule table and its
   countdown banner
+- `assets/qr/donation-qr.jpg` — donation UPI "Scan and Pay" QR, cropped from
+  `reference-material/upi_id.jpeg`; decoded and diffed against the UPI ID
+  text before committing, since a wrong donation QR would be serious
+- `assets/campaigns/thaila-kranti.jpg` — Thaila Kranti jute-bag campaign
+  image, cropped from `reference-material/thaila_kranti.jpeg` (dropped the
+  print-spec footer text, which isn't relevant on the web)
 - `reference-material/` — source/reference material only, gitignored and
-  not part of the deployed site (nothing in this folder is referenced by
-  any `<img>`/`url()` in the HTML — check before assuming otherwise):
+  not part of the deployed site. Nothing in this folder is referenced
+  directly by any `<img>`/`url()` in the HTML — anything needed on-site is
+  cropped/derived into `assets/` first (see above), never linked in place:
   - `maharshi-dayanand-saraswati.jpg`, `om.jpeg` — not currently used by
     any page; kept in case they're wanted for the Founder section later
   - `uddeshya.pdf` — source document for the objectives/activities content
@@ -197,9 +220,16 @@ Schedule — see the note in `README.md`'s Content notes).
   - `voucher.jpeg`, `DNS.jpeg` — reference screenshots (registration
     voucher, domain/DNS setup)
   - `12A.jpeg`, `80G.jpeg`, `bank_details.jpeg`, `mail_id.jpeg`,
-    `officials.jpeg`, `upi_id.jpeg` — scans used to source the
-    registration numbers, bank/UPI details, and contact info published
-    on the site; kept local-only since they contain sensitive info
+    `officials.jpeg` — scans used to source the registration numbers,
+    bank details, and contact info published on the site; kept
+    local-only since they contain sensitive info
+  - `upi_id.jpeg` — source scan for `assets/qr/donation-qr.jpg` (see above);
+    kept local-only, contains the full ICICI standee with extra branding
+  - `upnishad_pathan.jpeg` — QR code for the Upanishad Pathan WhatsApp
+    group; not used directly (the invite link text is in `index.html`
+    instead of a QR image)
+  - `thaila_kranti.jpeg` — source scan for
+    `assets/campaigns/thaila-kranti.jpg` (see above)
 
 The favicon is embedded directly as a `data:image/jpeg;base64,...` URI on
 line 7 of `index.html` — this makes that one line extremely long; this is
