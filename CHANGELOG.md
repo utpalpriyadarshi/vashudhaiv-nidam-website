@@ -45,6 +45,20 @@ All notable changes to this project are documented here.
   Instagram/Meet cards for link-out buttons. Linked from `index.html`'s
   footer, not the top nav. Step 4 of 4 (final step) of the Phase 1 rollout
   in `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`.
+- Donation UPI "Scan and Pay" QR code (`assets/qr/donation-qr.jpg`) added
+  next to the existing UPI ID text in the Contact section of `index.html`.
+  Cropped from the official ICICI Bank standee image; decoded and verified
+  to resolve to the same `MSVASUDHAIVANIDAMFOUNDATION.eazypay@icici` UPI ID
+  already published as text, before publishing.
+- New "Subject Groups" card under the WhatsApp Community section
+  (`.subject-groups`, `index.html`) linking to the Upanishad Pathan
+  (daily Upanishad recitation) WhatsApp group, alongside the existing
+  general community invite.
+- New "Upcoming Events" section (`.upcoming-events#events`) in
+  `index.html` for announcing future campaigns, seeded with the "Thaila
+  Kranti" (jute bag) campaign — 500 cloth bags to be distributed on 15th
+  August at the foundation's office premises in Haridwar, to promote a
+  plastic-free environment. Uses `assets/campaigns/thaila-kranti.jpg`.
 
 ### Fixed
 - Header brand subtitle in `index.html` had a stray "·" separator before

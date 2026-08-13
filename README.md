@@ -21,7 +21,9 @@ Source: registration voucher (`reference-material/voucher.jpeg`).
 Plain HTML/CSS/JS — no build step, no framework, no package manager. The
 entire site is `index.html`. Source/reference material (scans, source docs)
 lives in `reference-material/`, which is gitignored and not part of the
-deployed site.
+deployed site. Deployed images (donation QR, campaign photos) live in
+`assets/`, derived/cropped from files in `reference-material/` and kept
+lean (well under 300KB each) before committing.
 
 ## Local development
 
@@ -75,7 +77,9 @@ for how they're built.
   doubt.
 - Donation/contact forms are placeholder-only — no backend connected yet.
   Donations go via UPI ID and bank transfer details (no payment gateway
-  involved), published in the Contact section of `index.html`.
+  involved), published in the Contact section of `index.html`, alongside a
+  scan-and-pay QR code (`assets/qr/donation-qr.jpg`) verified to decode to
+  the same UPI ID.
 - Registration no., address, phone, email, and 12A/80G provisional
   registration numbers (see `tax-exemption.html`) are filled in throughout
   `index.html` and the legal pages.
@@ -89,12 +93,21 @@ for how they're built.
   2026-09-01, every `link` set to `"#"`) — swap in the real schedule once
   available; Step 4 (Live Now — YouTube/Facebook/Instagram/Meet) has shipped
   as four static "Coming Soon" placeholder cards, since no real platform
-  URLs exist yet — swap in real embeds/links once available. None of the
-  four are in the top nav bar — an earlier attempt added WhatsApp/Resources
-  there and pushed it past 10 items, which overflowed at common desktop
-  widths and cut off the Donate button/logo. WhatsApp Community is
-  reachable via its own on-page section/button; `resources.html`, the
-  schedule, and Live Now via the footer "Explore" column.
+  URLs exist yet — swap in real embeds/links once available (all Meet
+  cards/rows will use one single recurring Meet link, once received — see
+  `PENDING_WORK.md` item 7). None of the four are in the top nav bar — an
+  earlier attempt added WhatsApp/Resources there and pushed it past 10
+  items, which overflowed at common desktop widths and cut off the Donate
+  button/logo. WhatsApp Community is reachable via its own on-page
+  section/button; `resources.html`, the schedule, and Live Now via the
+  footer "Explore" column.
+- WhatsApp Community section also has a "Subject Groups" card for the
+  Upanishad Pathan (daily recitation) group, alongside the general
+  community invite link.
+- A new "Upcoming Events" section (`#events`) announces future
+  campaigns/programs, currently seeded with the "Thaila Kranti" jute bag
+  distribution (500 bags, plastic-free awareness) — date/location pending,
+  see `PENDING_WORK.md` item 9.
 
 ## Contributing to copy
 
