@@ -5,6 +5,35 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Made the Upanishad Pathan WhatsApp QR code clickable (wrapped in the
+  same join link, since scanning your own screen doesn't work) and
+  enlarged it from 72px to 110px for legibility.
+- Added the Upanishad Pathan WhatsApp group's QR code image next to its
+  join button in the Subject Groups card (`assets/qr/upanishad-pathan-whatsapp-qr.png`).
+- Added a confirmed Upanishad class row to the weekly schedule table in
+  `index.html`: Acharya Yogendra Medhavi Ji, Mon/Wed/Fri 9:00-10:00 PM
+  IST via Google Meet, with a real join link. Updated the schedule note
+  to reflect that this one row is confirmed while the rest remain
+  placeholders.
+- Updated the Thaila Kranti campaign card in `index.html` to reflect that
+  the event took place on 15 August 2026 in Rohalki Kishanpur village,
+  Haridwar, with D.S. Children's Academy; moved the section out of
+  "Upcoming campaigns" into "Our recent campaigns" and replaced the
+  placeholder image with an event photo (`assets/campaigns/thaila-kranti.jpg`).
+- Removed em dashes from body copy in `index.html` (hero, about, programs,
+  volunteer, campaigns, live schedule, footer), replacing each with a comma,
+  colon, or period depending on context, in both Hindi and English. Left
+  the `<title>` tag, a CSS comment, the nav emblem tooltip, image `alt`
+  text, and the address pincode separator untouched.
+- Removed the trailing period after "Bharat" in the hero headline, and
+  broadened it from "for every child in Bharat" to "for everyone in
+  Bharat" to reflect that the mission is not limited to children.
+- Replaced the first `[Placeholder]` "Who We Are" paragraph in `index.html`
+  with finalized copy covering education access, elder care, and
+  environmental sustainability (jute bags, tree-planting at Radha Madhav
+  Ghat), plus its Hindi translation.
+- Corrected the Hindi translation of "Rooted on the Ganga" in the hero
+  eyebrow on `index.html` from "गंगा तट पर निहित" to "गंगा से जुड़ी जड़ें".
 - Switched the primary custom domain from `vashudhaivnidam.org` (registered
   with an extra "h" by mistake) to the correctly-spelled
   `vasudhaivnidam.org`, updating the root `CNAME` file and every reference
