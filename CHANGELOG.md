@@ -5,6 +5,8 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Corrected the Hindi translation of "Rooted on the Ganga" in the hero
+  eyebrow on `index.html` from "गंगा तट पर निहित" to "गंगा से जुड़ी जड़ें".
 - Switched the primary custom domain from `vashudhaivnidam.org` (registered
   with an extra "h" by mistake) to the correctly-spelled
   `vasudhaivnidam.org`, updating the root `CNAME` file and every reference
