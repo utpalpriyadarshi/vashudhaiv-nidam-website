@@ -5,6 +5,9 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Made the Upanishad Pathan WhatsApp QR code clickable (wrapped in the
+  same join link, since scanning your own screen doesn't work) and
+  enlarged it from 72px to 110px for legibility.
 - Added the Upanishad Pathan WhatsApp group's QR code image next to its
   join button in the Subject Groups card (`assets/qr/upanishad-pathan-whatsapp-qr.png`).
 - Added a confirmed Upanishad class row to the weekly schedule table in
