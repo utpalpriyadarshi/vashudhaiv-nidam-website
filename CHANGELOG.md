@@ -5,6 +5,14 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Removed em dashes from body copy in `index.html` (hero, about, programs,
+  volunteer, campaigns, live schedule, footer), replacing each with a comma,
+  colon, or period depending on context, in both Hindi and English. Left
+  the `<title>` tag, a CSS comment, the nav emblem tooltip, image `alt`
+  text, and the address pincode separator untouched.
+- Removed the trailing period after "Bharat" in the hero headline, and
+  broadened it from "for every child in Bharat" to "for everyone in
+  Bharat" to reflect that the mission is not limited to children.
 - Replaced the first `[Placeholder]` "Who We Are" paragraph in `index.html`
   with finalized copy covering education access, elder care, and
   environmental sustainability (jute bags, tree-planting at Radha Madhav
