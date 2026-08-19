@@ -5,6 +5,8 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Added the Upanishad Pathan WhatsApp group's QR code image next to its
+  join button in the Subject Groups card (`assets/qr/upanishad-pathan-whatsapp-qr.png`).
 - Added a confirmed Upanishad class row to the weekly schedule table in
   `index.html`: Acharya Yogendra Medhavi Ji, Mon/Wed/Fri 9:00-10:00 PM
   IST via Google Meet, with a real join link. Updated the schedule note
