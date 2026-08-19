@@ -5,6 +5,11 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Updated the Thaila Kranti campaign card in `index.html` to reflect that
+  the event took place on 15 August 2026 in Rohalki Kishanpur village,
+  Haridwar, with D.S. Children's Academy; moved the section out of
+  "Upcoming campaigns" into "Our recent campaigns" and replaced the
+  placeholder image with an event photo (`assets/campaigns/thaila-kranti.jpg`).
 - Removed em dashes from body copy in `index.html` (hero, about, programs,
   volunteer, campaigns, live schedule, footer), replacing each with a comma,
   colon, or period depending on context, in both Hindi and English. Left
