@@ -5,6 +5,11 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Added a confirmed Upanishad class row to the weekly schedule table in
+  `index.html`: Acharya Yogendra Medhavi Ji, Mon/Wed/Fri 9:00-10:00 PM
+  IST via Google Meet, with a real join link. Updated the schedule note
+  to reflect that this one row is confirmed while the rest remain
+  placeholders.
 - Updated the Thaila Kranti campaign card in `index.html` to reflect that
   the event took place on 15 August 2026 in Rohalki Kishanpur village,
   Haridwar, with D.S. Children's Academy; moved the section out of
