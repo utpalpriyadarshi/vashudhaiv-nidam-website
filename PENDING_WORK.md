@@ -61,6 +61,20 @@ delete them) as each is resolved.
      `meet.google.com/xxx-xxxx-xxx` URL), paste it into every `meet` row's
      `link` field in `data/schedule.json` — still just a JSON edit, no
      code changes.
+   - **Partially done (2026-08-22):** Received the real recurring Meet
+     link for उपनिषद् पठन (Upanishad Pathan), `meet.google.com/iyx-vqgc-eyr`,
+     confirmed Mon/Wed/Fri 9:00–10:00 PM IST with आचार्य योगेन्द्र मेधावी जी
+     (Acharya Yogendra Medhavi Ji). Added as three real rows in
+     `data/schedule.json` (this week's Mon/Wed/Fri occurrences) and synced
+     into the static fallback row in `index.html`. Sanskrit Basics/Vedas
+     Study/Yoga Session/Open Q&A rows are still dummy placeholders —
+     replace once their real details arrive. Note: the acharya also
+     shared a Google Calendar *share* link (`calendar.google.com/.../share?slt=...`)
+     — deliberately **not** published anywhere on the site, since that
+     link grants access to their whole personal calendar rather than just
+     this event; a proper single-event link (`calendar.app.google/...`)
+     was also shared but not added to the site per the org's preference to
+     skip an "Add to calendar" button for now.
 8. **Live Now section** (`.live-now#live`, `index.html`) — four static
    "Coming Soon" placeholder cards (YouTube, Facebook, Instagram, Google
    Meet), no real channel/page/profile/meeting URLs yet. Built ahead of

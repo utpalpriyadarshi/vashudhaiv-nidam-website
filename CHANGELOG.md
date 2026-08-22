@@ -5,6 +5,17 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Added the real Upanishad Pathan Google Meet link
+  (`meet.google.com/iyx-vqgc-eyr`) to `data/schedule.json` as three
+  Mon/Wed/Fri rows (this week's occurrences, 9:00-10:00 PM IST) with
+  Acharya Yogendra Medhavi Ji as teacher — this is the JSON file that
+  actually drives the live schedule table (`js/schedule.js` overwrites
+  the static HTML rows on page load), so the earlier hardcoded HTML row
+  was not actually showing on the live site. Also synced the Meet link
+  into that now-fallback-only static row in `index.html`. Deliberately
+  did not publish the acharya's Google Calendar share link, since it
+  grants access to their whole personal calendar rather than just this
+  event.
 - Made the Upanishad Pathan WhatsApp QR code clickable (wrapped in the
   same join link, since scanning your own screen doesn't work) and
   enlarged it from 72px to 110px for legibility.
