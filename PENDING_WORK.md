@@ -75,15 +75,19 @@ delete them) as each is resolved.
      this event; a proper single-event link (`calendar.app.google/...`)
      was also shared but not added to the site per the org's preference to
      skip an "Add to calendar" button for now.
-8. **Live Now section** (`.live-now#live`, `index.html`) — four static
-   "Coming Soon" placeholder cards (YouTube, Facebook, Instagram, Google
-   Meet), no real channel/page/profile/meeting URLs yet. Built ahead of
-   real platform URLs per `PHASE1_LIVE_CLASSES_WHATSAPP_PLAN.md`. Once
-   URLs are available: swap the YouTube card for the channel's Live-tab
-   `<iframe>` embed, the Facebook card for the Page Plugin embed (both
-   self-update live/offline, no API key needed), and the Instagram/Meet
-   cards for "Watch on Instagram"/"Join Meet" link-out buttons (Meet card
-   uses the same single recurring link as item 7 above, once received).
+8. **Live Now section** (`.live-now#live`, `index.html`) — ~~four static
+   "Coming Soon" placeholder cards~~. **Done (2026-08-22):** all four
+   cards now link out to real profiles: YouTube
+   (`youtube.com/@acharyayogendramedhaviveda7334`), Instagram
+   (`instagram.com/yogendramedhavi`), and Google Meet (same recurring
+   link as item 7). Kept as simple link-out buttons rather than the
+   originally-planned self-updating embeds (YouTube Live-tab iframe needs
+   a `UC...` channel ID, not the `@handle` we have; Facebook Page Plugin
+   needs the actual Page URL) — revisit as an embed later if those become
+   available. **Facebook is a known gap:** the only link received
+   (`facebook.com/share/r/18ChB2dbpZ/`) is a share link to one specific
+   reel/post, not the Page itself, so it will go stale — swap for the
+   real Facebook Page URL once available.
 ## Done
 
 - Registration no., address, phone confirmed and filled in.

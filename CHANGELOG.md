@@ -5,6 +5,14 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Changed
+- Replaced the four "Coming Soon" placeholder cards in the Live Now
+  section (`index.html`) with real link-out buttons: YouTube
+  (`youtube.com/@acharyayogendramedhaviveda7334`), Facebook (a specific
+  reel share link — the real Page URL is still needed), Instagram
+  (`instagram.com/yogendramedhavi`), and Google Meet (the same recurring
+  Upanishad Pathan link). Kept as simple links rather than the
+  originally-planned self-updating embeds, since those need a YouTube
+  channel ID and a Facebook Page URL that aren't available yet.
 - Added the real Upanishad Pathan Google Meet link
   (`meet.google.com/iyx-vqgc-eyr`) to `data/schedule.json` as three
   Mon/Wed/Fri rows (this week's occurrences, 9:00-10:00 PM IST) with
