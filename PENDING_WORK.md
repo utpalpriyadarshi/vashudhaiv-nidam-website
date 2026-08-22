@@ -75,19 +75,14 @@ delete them) as each is resolved.
      this event; a proper single-event link (`calendar.app.google/...`)
      was also shared but not added to the site per the org's preference to
      skip an "Add to calendar" button for now.
-8. **Live Now section** (`.live-now#live`, `index.html`) — ~~four static
-   "Coming Soon" placeholder cards~~. **Done (2026-08-22):** all four
-   cards now link out to real profiles: YouTube
-   (`youtube.com/@acharyayogendramedhaviveda7334`), Instagram
-   (`instagram.com/yogendramedhavi`), and Google Meet (same recurring
-   link as item 7). Kept as simple link-out buttons rather than the
-   originally-planned self-updating embeds (YouTube Live-tab iframe needs
-   a `UC...` channel ID, not the `@handle` we have; Facebook Page Plugin
-   needs the actual Page URL) — revisit as an embed later if those become
-   available. **Facebook is a known gap:** the only link received
-   (`facebook.com/share/r/18ChB2dbpZ/`) is a share link to one specific
-   reel/post, not the Page itself, so it will go stale — swap for the
-   real Facebook Page URL once available.
+8. **Facebook Page URL** (`.live-now#live`, `index.html`) — the Facebook
+   card in the Live Now section currently links to a one-off reel share
+   (`facebook.com/share/r/18ChB2dbpZ/`), not the actual Page, so it'll go
+   stale. Swap for the real Facebook Page URL once available. (Also
+   revisit YouTube/Facebook as self-updating embeds later if a `UC...`
+   channel ID and the Page URL become available — see Done log below for
+   why link-out buttons were used instead.)
+
 ## Done
 
 - Registration no., address, phone confirmed and filled in.
@@ -123,3 +118,18 @@ delete them) as each is resolved.
 - New "Upcoming Events" section (`.upcoming-events#events`) added with
   the Thaila Kranti (jute bag) campaign — 500 bags, distributing 15th
   August at the office premises in Haridwar.
+- Real Upanishad Pathan Google Meet link (`meet.google.com/iyx-vqgc-eyr`)
+  added to `data/schedule.json` as three Mon/Wed/Fri rows with Acharya
+  Yogendra Medhavi Ji, replacing that one dummy row (the JSON file is
+  what actually drives the live schedule table, not the static HTML).
+  Sanskrit Basics/Vedas Study/Yoga Session/Open Q&A rows are still dummy
+  placeholders. The acharya's Google Calendar *share* link was
+  deliberately not published (grants access to their whole personal
+  calendar, not just this event).
+- Live Now section's four "Coming Soon" cards replaced with real
+  link-out buttons: YouTube (`youtube.com/@acharyayogendramedhaviveda7334`),
+  Instagram (`instagram.com/yogendramedhavi`), Google Meet (same
+  recurring link as above), and Facebook (a reel share link — see Open
+  item 8 above for the remaining gap). Kept as simple links rather than
+  self-updating embeds since those need a YouTube channel ID and
+  Facebook Page URL that aren't available yet.
