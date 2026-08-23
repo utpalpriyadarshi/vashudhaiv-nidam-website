@@ -75,7 +75,25 @@ delete them) as each is resolved.
      this event; a proper single-event link (`calendar.app.google/...`)
      was also shared but not added to the site per the org's preference to
      skip an "Add to calendar" button for now.
-8. **Facebook Page URL** (`.live-now#live`, `index.html`) — the Facebook
+8. **Event photo captions need confirmation** (`.event-photos#event-photos`,
+   `index.html`, added 2026-08-23) — 8 real photos from
+   `reference-material/230826/` were published in a new "Functions &
+   Events" section (`assets/events/`). Several captions are intentionally
+   generic ("सामुदायिक कार्यक्रम" / Community programme,
+   "विद्यालय में कार्यक्रम" / Programme at a school,
+   "कार्यक्रम में सहभोज" / Community meal) because the exact event
+   name/date/location wasn't legible from the photo itself — confirm the
+   real details with the foundation and tighten the captions (and add
+   date/location like the other event sections do) once known. The two
+   Yagyashala/Mahayajna and the Sanskar Shala/World Environment Day photos
+   have banner text confirming those event names/dates.
+9. **Videos from the foundation** — the same batch
+   (`reference-material/230826/`) was shared as "photos and videos," but
+   only 18 photos arrived, no video files. Asked the foundation to
+   re-share the videos separately; once they land, decide on hosting
+   (YouTube unlisted/embed vs. direct file) before adding them to the
+   site — large video files should not be committed directly to the repo.
+10. **Facebook Page URL** (`.live-now#live`, `index.html`) — the Facebook
    card in the Live Now section currently links to a one-off reel share
    (`facebook.com/share/r/18ChB2dbpZ/`), not the actual Page, so it'll go
    stale. Swap for the real Facebook Page URL once available. (Also

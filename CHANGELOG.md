@@ -4,6 +4,21 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+### Added
+- New "Functions & Events" section (`.event-photos#event-photos`,
+  `index.html`) between `#gallery` and `.transparency`, showing 8 real
+  photos from the Foundation's functions and felicitation events
+  (resized/compressed to under 200KB each, in `assets/events/`). Kept
+  separate from `#gallery`, whose placeholder tiles are captioned for
+  classroom/skills photography that hasn't arrived yet — the first batch
+  of real photos received (`reference-material/230826/`) turned out to be
+  mostly VIP/felicitation event shots plus two children's Yoga Day photos,
+  not classroom content, so a new section was the better fit rather than
+  forcing a caption mismatch. Two of the photos show schoolchildren's
+  faces (Yoga Day); publishing them was confirmed OK with the
+  organization for this batch. Captions are intentionally generic where
+  the exact event name/date wasn't legible from the photo itself.
+
 ### Changed
 - Replaced the four "Coming Soon" placeholder cards in the Live Now
   section (`index.html`) with real link-out buttons: YouTube
