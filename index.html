@@ -384,6 +384,19 @@
   .gallery-grid div:nth-child(4n+2){grid-row:span 2;}
   @media (max-width:860px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
 
+  /* ===== EVENT PHOTOS ===== */
+  .event-photo-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:14px;}
+  .event-photo{position:relative;border-radius:3px;overflow:hidden;}
+  .event-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .event-photo figcaption{
+    position:absolute;left:0;right:0;bottom:0;padding:10px 12px 8px;
+    background:linear-gradient(to top,rgba(20,20,15,0.82),rgba(20,20,15,0));
+    color:#fff;font-size:0.8rem;line-height:1.3;
+  }
+  .event-photo figcaption .en-mini{color:#D8D8CC;}
+  .event-photo-grid .event-photo:nth-child(4n+1){grid-row:span 2;}
+  @media (max-width:860px){.event-photo-grid{grid-template-columns:repeat(2,1fr);}.event-photo-grid .event-photo:nth-child(4n+1){grid-row:span 1;}}
+
   /* ===== OBJECTIVES ===== */
   .objectives{background:var(--stone-dark);}
   .obj-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
@@ -881,6 +894,26 @@
     <div class="gallery-grid">
       <div class="hi">कक्षा दिवस<span class="en-mini">Classroom Day</span></div><div class="hi">कौशल कार्यशाला<span class="en-mini">Skill Workshop</span></div><div class="hi">पुस्तक अभियान<span class="en-mini">Book Drive</span></div><div class="hi">गंगा आरती सेवा<span class="en-mini">Ganga Aarti Seva</span></div>
       <div class="hi">शिल्प कक्षा<span class="en-mini">Craft Class</span></div><div class="hi">स्नातक समारोह<span class="en-mini">Graduation</span></div><div class="hi">योग सत्र<span class="en-mini">Yoga Session</span></div><div class="hi">सामुदायिक भ्रमण<span class="en-mini">Community Visit</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="event-photos" id="event-photos">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow hi">झलकियाँ<span class="en-mini">Glimpses</span></span>
+      <h2 class="hi">समारोह एवं आयोजन<span class="en-sub" style="color:#4a4a42;">Functions &amp; Events</span></h2>
+      <p class="hi">फाउंडेशन से जुड़े हाल के कार्यक्रमों और सम्मान समारोहों की तस्वीरें<span class="en-line">Photos from recent programmes and felicitation ceremonies linked to the Foundation</span></p>
+    </div>
+    <div class="event-photo-grid">
+      <figure class="event-photo reveal"><img src="assets/events/yagyashala-felicitation.jpg" alt="Guests on stage at a Vedic Mahayajna during a birthday celebration at Mata Kaushalya Devi Yagyashala"><figcaption class="hi">जन्मोत्सव पर वैदिक महायज्ञ<span class="en-mini">Vedic Mahayajna at a birthday celebration</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/mahayajna-honour.jpg" alt="Guests being felicitated with a gift at the Vedic Mahayajna birthday event"><figcaption class="hi">अतिथि सम्मान<span class="en-mini">Guest felicitation</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/sanskar-shala-samaroh.jpg" alt="Group photo at a Sanskar Shala programme, 21 June 2026"><figcaption class="hi">संस्कार शाला कार्यक्रम<span class="en-mini">Sanskar Shala programme</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/yoga-day-children.jpg" alt="Schoolchildren practising yoga poses outdoors on International Yoga Day"><figcaption class="hi">योग दिवस पर बच्चों का सत्र<span class="en-mini">Children's session on Yoga Day</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/school-visit-group.jpg" alt="Group photo with schoolchildren at an outdoor programme"><figcaption class="hi">विद्यालय में कार्यक्रम<span class="en-mini">Programme at a school</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/world-environment-day.jpg" alt="Sash being presented to a guest at a World Environment Day tree-plantation event, 5 June 2026"><figcaption class="hi">विश्व पर्यावरण दिवस समारोह<span class="en-mini">World Environment Day celebration</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/dusk-community-event.jpg" alt="Three people posing together at an evening community programme"><figcaption class="hi">सामुदायिक कार्यक्रम<span class="en-mini">Community programme</span></figcaption></figure>
+      <figure class="event-photo reveal"><img src="assets/events/prasad-samaroh.jpg" alt="Attendees sharing prasad at a programme"><figcaption class="hi">कार्यक्रम में सहभोज<span class="en-mini">Community meal at the programme</span></figcaption></figure>
     </div>
   </div>
 </section>

@@ -107,7 +107,13 @@ for how they're built.
 - A new "Upcoming Events" section (`#events`) announces future
   campaigns/programs, currently seeded with the "Thaila Kranti" jute bag
   distribution (500 bags, plastic-free awareness) — date/location pending,
-  see `PENDING_WORK.md` item 9.
+  see `PENDING_WORK.md` item 10.
+- A "Functions & Events" section (`#event-photos`) shows 8 real photos from
+  the Foundation's functions/felicitation events (`assets/events/`) — kept
+  separate from `#gallery` since it's VIP/felicitation photography, not
+  the classroom/skills photos `#gallery` is captioned for. Some captions
+  are still generic pending confirmation of exact event details — see
+  `PENDING_WORK.md` item 8.
 
 ## Contributing to copy
 

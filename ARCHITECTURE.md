@@ -55,7 +55,13 @@ and often an `id` used as a nav-anchor target:
 - `.upcoming-events#events` — announcements for future campaigns/events,
   each an `.event-card` with an image, description, and date/location
   meta line; currently seeded with the "Thaila Kranti" jute bag campaign
-- `#gallery` — photo gallery
+- `#gallery` — photo gallery (still placeholder tiles; see
+  `PENDING_WORK.md`)
+- `.event-photos#event-photos` — real photos from the Foundation's
+  functions/felicitation events, as an `.event-photo-grid` of captioned
+  `<figure>` tiles sourced from `assets/events/`; kept separate from
+  `#gallery` because the available photos are event/felicitation shots
+  rather than the classroom/skills photography `#gallery` is captioned for
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
 
