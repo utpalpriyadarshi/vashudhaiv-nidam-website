@@ -18,6 +18,15 @@ All notable changes to this project are documented here.
   faces (Yoga Day); publishing them was confirmed OK with the
   organization for this batch. Captions are intentionally generic where
   the exact event name/date wasn't legible from the photo itself.
+- Added a credentials line to Shri Yogendra Medhavi's entry under President
+  on `team.html` (International Spokesperson, Vedalankar, Shiksha Shastri,
+  Darshanacharya, Vedacharya; Provincial President, Bharatiya Kanya Suraksha
+  Mission Uttarakhand; Intellectual Head, Arya Veer Dal Uttarakhand;
+  Publicity Minister & Dean, Arya Veer Dal, Arya Samaj Bhel Haridwar),
+  transcribed from a birthday-greeting graphic in the same photo batch
+  rather than embedding the graphic itself (its text would be illegible
+  cropped into the event-photo grid, and it didn't fit the campaign-card
+  section either).
 
 ### Changed
 - Replaced the four "Coming Soon" placeholder cards in the Live Now

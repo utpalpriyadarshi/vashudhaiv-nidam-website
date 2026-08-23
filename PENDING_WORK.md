@@ -38,7 +38,10 @@ delete them) as each is resolved.
 4. **Team photos** (`team.html`) — all 16 entries currently show
    initial-letter circles instead of real photos (4 patrons, president,
    vice president, secretary + joint secretary, treasurer + joint
-   treasurer, spokesperson, 3 media in-charges, 2 advisors).
+   treasurer, spokesperson, 3 media in-charges, 2 advisors). (2026-08-23:
+   President's entry now has a credentials line transcribed from a
+   birthday-greeting graphic — see `PENDING_WORK.md` Done log — but still
+   no real photo.)
 5. **Footer copyright note** (`index.html`) — still reads
    "[Placeholder सामग्री — केवल डिज़ाइन समीक्षा हेतु]".
 6. **Founder's photo/bio accuracy** — worth double-checking against the
@@ -148,6 +151,14 @@ delete them) as each is resolved.
   link-out buttons: YouTube (`youtube.com/@acharyayogendramedhaviveda7334`),
   Instagram (`instagram.com/yogendramedhavi`), Google Meet (same
   recurring link as above), and Facebook (a reel share link — see Open
-  item 8 above for the remaining gap). Kept as simple links rather than
+  item 10 above for the remaining gap). Kept as simple links rather than
   self-updating embeds since those need a YouTube channel ID and
   Facebook Page URL that aren't available yet.
+- Added a "Functions & Events" photo section (`.event-photos#event-photos`,
+  `assets/events/`, 2026-08-23) with 8 real photos from
+  `reference-material/230826/` — see Open item 8 above for the caption
+  follow-ups still needed.
+- Added a credentials line to Shri Yogendra Medhavi's President entry on
+  `team.html` (2026-08-23), transcribed from a birthday-greeting graphic
+  in the same photo batch rather than embedding the graphic — see Open
+  item 4 above (still no real team photos).
