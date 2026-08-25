@@ -27,6 +27,8 @@ All notable changes to this project are documented here.
   rather than embedding the graphic itself (its text would be illegible
   cropped into the event-photo grid, and it didn't fit the campaign-card
   section either).
+- Added a new "न्यासी / Trustees" group to `team.html`, after Advisors:
+  Shri Archit Chandwani, Shri Dinendra Singh, and Shrimati Saroj Bala.
 
 ### Changed
 - Replaced the four "Coming Soon" placeholder cards in the Live Now
