@@ -31,6 +31,12 @@ All notable changes to this project are documented here.
   Shri Archit Chandwani, Shri Dinendra Singh, and Shrimati Saroj Bala.
 
 ### Changed
+- Joined the organization name from two words to one throughout the site
+  and docs: "Vasudhaiv Nidam" → "Vasudhaivnidam" and "वसुधैव नीडम्" →
+  "वसुधैवनीडम्" (matches the live domain vasudhaivnidam.org). Applied to
+  `index.html`, `team.html`, the four legal pages, `resources.html`,
+  `README.md`, and `CLAUDE.md`. Left past `CHANGELOG.md` entries as-is
+  since they're a record of wording used at the time.
 - Replaced the four "Coming Soon" placeholder cards in the Live Now
   section (`index.html`) with real link-out buttons: YouTube
   (`youtube.com/@acharyayogendramedhaviveda7334`), Facebook (a specific

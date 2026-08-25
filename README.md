@@ -1,6 +1,6 @@
-# वसुधैव नीडम् फाउंडेशन — Vasudhaiv Nidam Foundation
+# वसुधैवनीडम् फाउंडेशन — Vasudhaivnidam Foundation
 
-Official website for the Vasudhaiv Nidam Foundation, Haridwar — a bilingual
+Official website for the Vasudhaivnidam Foundation, Haridwar — a bilingual
 (Hindi-primary, English-secondary) single-page site covering the foundation's
 mission, founder, team, objectives, programs, heritage, stories, and
 contact/donation information.

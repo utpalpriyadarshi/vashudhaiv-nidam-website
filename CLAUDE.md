@@ -4,8 +4,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Bilingual (Hindi-primary/English-secondary) website for वसुधैव नीडम् फाउंडेशन
-(Vasudhaiv Nidam Foundation), Haridwar. Static site: `index.html` is the main
+Bilingual (Hindi-primary/English-secondary) website for वसुधैवनीडम् फाउंडेशन
+(Vasudhaivnidam Foundation), Haridwar. Static site: `index.html` is the main
 single-page site at the repo root, plus four standalone legal pages (`privacy.html`,
 `terms.html`, `refund-policy.html`, `tax-exemption.html`) and a handful of image/PDF
 assets. No build step, no frameworks, no package manager — plain HTML/CSS/JS. There is
