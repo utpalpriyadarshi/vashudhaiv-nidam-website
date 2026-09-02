@@ -5,6 +5,9 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Added
+- Added a new "संपदा अधिकारी / Estate Officer" group to `team.html`, placed
+  right after Secretary & Joint Secretary, with Shri Utpal Priyadarshi as
+  the entry.
 - New "Functions & Events" section (`.event-photos#event-photos`,
   `index.html`) between `#gallery` and `.transparency`, showing 8 real
   photos from the Foundation's functions and felicitation events
