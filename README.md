@@ -108,12 +108,14 @@ for how they're built.
   campaigns/programs, currently seeded with the "Thaila Kranti" jute bag
   distribution (500 bags, plastic-free awareness) — date/location pending,
   see `PENDING_WORK.md` item 10.
-- A "Functions & Events" section (`#event-photos`) shows 8 real photos from
+- A "Functions & Events" section (`#event-photos`) shows 20 real photos from
   the Foundation's functions/felicitation events (`assets/events/`) — kept
   separate from `#gallery` since it's VIP/felicitation photography, not
   the classroom/skills photos `#gallery` is captioned for. Some captions
   are still generic pending confirmation of exact event details — see
-  `PENDING_WORK.md` item 8.
+  `PENDING_WORK.md` item 8. The 12 added on 12 Nov 2026 come from
+  `reference-material/121126/` (several events at several places, e.g.
+  Roorkee and Mauritius; captions kept generic on venue/date).
 
 ## Contributing to copy
 

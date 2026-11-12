@@ -5,6 +5,12 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Added
+- Added 12 more photos (20 total) to the "Functions & Events" section from
+  `reference-material/121126/`: Sneh Sammelan felicitations, Environment Holi
+  Milan plaque presentations, group photos, a studio interview and a meeting
+  with dignitaries. Events span several places and dates, so captions avoid
+  specific venues/dates. Near-duplicate and blurry shots were left out. Grid
+  now uses `grid-auto-flow:dense` to avoid gaps.
 - Added a new "संपदा अधिकारी / Estate Officer" group to `team.html`, placed
   right after Secretary & Joint Secretary, with Shri Utpal Priyadarshi as
   the entry.
