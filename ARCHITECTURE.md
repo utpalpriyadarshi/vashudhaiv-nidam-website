@@ -61,7 +61,8 @@ and often an `id` used as a nav-anchor target:
   functions/felicitation events, as an `.event-photo-grid` of captioned
   `<figure>` tiles sourced from `assets/events/`; kept separate from
   `#gallery` because the available photos are event/felicitation shots
-  rather than the classroom/skills photography `#gallery` is captioned for
+  rather than the classroom/skills photography `#gallery` is captioned for;
+  the grid uses `grid-auto-flow:dense` so tall/short tiles leave no gaps
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
 
