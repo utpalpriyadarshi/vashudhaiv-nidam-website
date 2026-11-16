@@ -23,6 +23,14 @@ directly to `main`.** For every change: create a feature branch (e.g.
 the user has reviewed the change (they typically open the file locally in a browser
 first). This applies to docs and README changes too, not just `index.html`.
 
+**One exception (once the Media Cell admin is live):** the admin at `/admin/`
+(Sveltia CMS) lets the Media Cell commit event content directly — only
+`data/events.json` and photos in `assets/events/`. Those commits are expected
+and need no review. Everything else, including `admin/config.yml` and
+`js/events.js`, still follows the branch-and-review rule. See `README.md`
+("Media Cell admin") and `ARCHITECTURE.md` ("Events data and the Media Cell
+admin").
+
 **Keep `README.md`, `ARCHITECTURE.md`, and `CHANGELOG.md` updated as part of every
 change**, not as a separate cleanup pass afterward — when a change adds a page, fixes a
 bug, or updates content/config, update the relevant doc(s) in the same branch/commit.

@@ -361,6 +361,8 @@
   .event-card p{color:#4a4a42;font-size:0.92rem;margin-bottom:10px;}
   .event-meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:6px;font-size:0.85rem;color:#6a6a60;}
   .event-meta strong{color:var(--ink);}
+  .event-card + .event-card{margin-top:20px;}
+  .upcoming-block{margin-bottom:72px;}
   @media (max-width:700px){.event-card{grid-template-columns:1fr;}}
 
   /* ===== LIVE NOW ===== */
@@ -395,7 +397,7 @@
   }
   .event-photo figcaption .en-mini{color:#D8D8CC;}
   .event-photo-grid .event-photo:nth-child(4n+1){grid-row:span 2;}
-  .event-photo-grid .event-photo:nth-child(17){grid-row:span 1;}
+  .event-photo-grid .event-photo.wide{grid-row:span 1;}
   @media (max-width:860px){.event-photo-grid{grid-template-columns:repeat(2,1fr);}.event-photo-grid .event-photo:nth-child(4n+1){grid-row:span 1;}}
 
   /* ===== OBJECTIVES ===== */
@@ -866,6 +868,14 @@
 
 <section class="upcoming-events" id="events">
   <div class="wrap">
+    <!-- Upcoming events: filled by js/events.js from data/events.json (edited at /admin); stays hidden while no event is dated today or later -->
+    <div class="upcoming-block" id="upcomingBlock" hidden>
+      <div class="section-head center">
+        <span class="eyebrow hi">आगामी<span class="en-mini">Upcoming</span></span>
+        <h2 class="hi">आगामी कार्यक्रम<span class="en-sub" style="color:#4a4a42;">Upcoming Events</span></h2>
+      </div>
+      <div id="upcomingList"></div>
+    </div>
     <div class="section-head center">
       <span class="eyebrow hi">हाल का अभियान<span class="en-mini">Recent Campaign</span></span>
       <h2 class="hi">हमारे हाल के अभियान<span class="en-sub" style="color:#4a4a42;">Our recent campaigns</span></h2>
@@ -906,7 +916,8 @@
       <h2 class="hi">समारोह एवं आयोजन<span class="en-sub" style="color:#4a4a42;">Functions &amp; Events</span></h2>
       <p class="hi">फाउंडेशन से जुड़े हाल के कार्यक्रमों और सम्मान समारोहों की तस्वीरें<span class="en-line">Photos from recent programmes and felicitation ceremonies linked to the Foundation</span></p>
     </div>
-    <div class="event-photo-grid">
+    <!-- Replaced by js/events.js from data/events.json (edited at /admin); the photos below are only the fallback for file:// preview and no-JS visitors -->
+    <div class="event-photo-grid" id="eventPhotoGrid">
       <figure class="event-photo reveal"><img src="assets/events/yagyashala-felicitation.jpg" alt="Guests on stage at a Vedic Mahayajna during a birthday celebration at Mata Kaushalya Devi Yagyashala"><figcaption class="hi">जन्मोत्सव पर वैदिक महायज्ञ<span class="en-mini">Vedic Mahayajna at a birthday celebration</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/mahayajna-honour.jpg" alt="Guests being felicitated with a gift at the Vedic Mahayajna birthday event"><figcaption class="hi">अतिथि सम्मान<span class="en-mini">Guest felicitation</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/sanskar-shala-samaroh.jpg" alt="Group photo at a Sanskar Shala programme, 21 June 2026"><figcaption class="hi">संस्कार शाला कार्यक्रम<span class="en-mini">Sanskar Shala programme</span></figcaption></figure>
@@ -923,7 +934,7 @@
       <figure class="event-photo reveal"><img src="assets/events/sneh-sammelan-stage.jpg" alt="Guests seated on stage under the Vasudhaivnidam banner" loading="lazy"><figcaption class="hi">मंचासीन अतिथि<span class="en-mini">Guests on stage</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/environment-event-plaque-swami.jpg" alt="A saint being presented a memento at an environment event" loading="lazy"><figcaption class="hi">पर्यावरण समारोह में सम्मान<span class="en-mini">Felicitation at the environment event</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/welcome-steps-group.jpg" alt="Group photo of the Foundation's well-wishers on decorated steps" loading="lazy"><figcaption class="hi">शुभचिंतकों के साथ सामूहिक चित्र<span class="en-mini">Group photo with well-wishers</span></figcaption></figure>
-      <figure class="event-photo reveal"><img src="assets/events/environment-holi-milan-plaque.jpg" alt="A guest being presented a plaque at the Environment Holi Milan" loading="lazy"><figcaption class="hi">पर्यावरण होली मिलन समारोह<span class="en-mini">Environment Holi Milan</span></figcaption></figure>
+      <figure class="event-photo reveal wide"><img src="assets/events/environment-holi-milan-plaque.jpg" alt="A guest being presented a plaque at the Environment Holi Milan" loading="lazy"><figcaption class="hi">पर्यावरण होली मिलन समारोह<span class="en-mini">Environment Holi Milan</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/dignitaries-meeting.jpg" alt="Foundation representatives posing with dignitaries in an office" loading="lazy"><figcaption class="hi">गणमान्य जनों के साथ भेंट<span class="en-mini">Meeting with dignitaries</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/studio-interview.jpg" alt="Foundation representative during a studio interview" loading="lazy"><figcaption class="hi">स्टूडियो वार्ता<span class="en-mini">Studio interview</span></figcaption></figure>
       <figure class="event-photo reveal"><img src="assets/events/sneh-sammelan-felicitation.jpg" alt="Guests being felicitated at the Sneh Sammelan" loading="lazy"><figcaption class="hi">अभिनंदन समारोह<span class="en-mini">Felicitation ceremony</span></figcaption></figure>
@@ -1019,6 +1030,7 @@
 
 <script src="js/countdown.js"></script>
 <script src="js/schedule.js"></script>
+<script src="js/events.js"></script>
 <script>
   // Mobile nav toggle
   const navToggle = document.getElementById('navToggle');

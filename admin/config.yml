@@ -1,0 +1,88 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Sveltia CMS configuration for the Media Cell admin at /admin/.
+# Setup, trial and go-live steps: README.md, "Media Cell admin" section.
+
+backend:
+  name: github
+  repo: utpalpriyadarshi/vashudhaiv-nidam-website
+  # TRIAL SETTING. While the prototype is being tried, the admin saves to this
+  # branch, so nothing reaches the live site. At go-live change it to: main
+  branch: feature/sveltia-cms
+  # Login helper (Sveltia CMS Authenticator on Cloudflare Workers). Uncomment and
+  # fill in after README step 2. Until then only "Sign In with Token" works.
+  # base_url: https://sveltia-cms-auth.YOUR-SUBDOMAIN.workers.dev
+
+site_url: https://vasudhaivnidam.org
+
+# Photos uploaded through the admin are stored next to the existing event photos.
+media_folder: /assets/events
+public_folder: /assets/events
+
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+      transformations:
+        # Every uploaded photo (JPEG, PNG, HEIC from phones) is converted to WebP
+        # and scaled down to at most 1600 px in the browser, before upload.
+        raster_image:
+          format: webp
+          quality: 75
+          width: 1600
+          height: 1600
+
+collections:
+  # Single-file collection: every event is its own entry in the admin, and all
+  # of them are stored in data/events.json as one array, which js/events.js reads.
+  - name: events
+    label: कार्यक्रम / Events
+    label_singular: कार्यक्रम / Event
+    description: >-
+      आने वाली तिथि वाले कार्यक्रम "आगामी कार्यक्रम" में दिखते हैं; तिथि बीतने पर
+      फ़ोटो अपने-आप "समारोह एवं आयोजन" में चली जाती है। /
+      Events with a coming date show under "Upcoming Events"; once the date has
+      passed, the photo moves to "Functions & Events" by itself.
+    file: /data/events.json
+    identifier_field: title_hi
+    summary: "{{title_hi}} · {{date}}"
+    thumbnail: photo
+    fields:
+      - name: title_hi
+        label: शीर्षक (हिंदी) / Title (Hindi)
+        hint: 'छोटा रखें, जैसे "वृक्षारोपण अभियान" / Keep it short'
+      - name: title_en
+        label: शीर्षक (अंग्रेज़ी) / Title (English)
+        hint: 'e.g. "Tree plantation drive"'
+      - name: date
+        label: तिथि / Date
+        widget: datetime
+        type: date
+        hint: >-
+          कार्यक्रम का दिन। आने वाली तिथि = आगामी कार्यक्रम; बीती तिथि = समारोह एवं आयोजन। /
+          The day of the event. Coming date = Upcoming Events; past date = Functions & Events.
+      - name: location_hi
+        label: स्थान (हिंदी) / Location (Hindi)
+        required: false
+      - name: location_en
+        label: स्थान (अंग्रेज़ी) / Location (English)
+        required: false
+      - name: photo
+        label: फ़ोटो / Photo
+        widget: image
+        required: false
+        hint: >-
+          आड़ी (लैंडस्केप) फ़ोटो बेहतर दिखती है। आगामी कार्यक्रम बिना फ़ोटो के भी चलेगा,
+          पर तिथि बीतने के बाद बिना फ़ोटो वाला कार्यक्रम साइट पर नहीं दिखता। /
+          Landscape photos look best. An upcoming event may have no photo, but after
+          its date an event without a photo is not shown on the site.
+      - name: caption_hi
+        label: विवरण (हिंदी) / Caption (Hindi)
+        widget: text
+        required: false
+        hint: एक-दो वाक्य / One or two sentences
+      - name: caption_en
+        label: विवरण (अंग्रेज़ी) / Caption (English)
+        widget: text
+        required: false
+        hint: One or two sentences. Also used as the photo's description for screen readers.

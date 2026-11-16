@@ -5,6 +5,27 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Added
+- **Prototype, on branch `feature/sveltia-cms`, not merged (16 Nov 2026):**
+  Media Cell admin at `/admin/` using Sveltia CMS with the GitHub backend,
+  so events and photos can be added from a form instead of editing HTML.
+  Content publishes directly; code and config changes still go through
+  review. Includes:
+  - `data/events.json` holding the events (`title_hi`, `title_en`, `date`,
+    `location_hi`, `location_en`, `photo`, `caption_hi`, `caption_en`),
+    seeded with the 20 existing "Functions & Events" photos.
+  - `js/events.js`, which renders events dated today or later as cards in a
+    new "आगामी कार्यक्रम / Upcoming Events" block at the top of `#events`
+    (hidden when there are none) and past events as photo tiles in
+    "Functions & Events", newest first. The Thaila Kranti "Recent
+    campaigns" card is unchanged and stays hand-written.
+  - Photo handling: uploads are converted to WebP (max 1600 px) by the
+    admin, and a GitHub Action recompresses any photo over 200 KB in
+    `assets/events/`.
+  - `admin/guide.html`, a one-page Hindi/English guide for the Media Cell,
+    and setup/trial/go-live notes in `README.md`.
+  - The "Functions & Events" grid now keeps very wide photos out of the
+    tall tiles automatically (replaces the fixed rule for the Holi Milan
+    photo). Today's layout is unchanged.
 - Added 12 more photos (20 total) to the "Functions & Events" section from
   `reference-material/121126/`: Sneh Sammelan felicitations, Environment Holi
   Milan plaque presentations, group photos, a studio interview and a meeting

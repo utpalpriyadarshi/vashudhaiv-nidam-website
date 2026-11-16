@@ -5,7 +5,9 @@
 The main site is a single static HTML file (`index.html`) with an inline
 `<style>` block, inline SVG graphics, and a small inline `<script>` at the
 end of the body. There are no external JS dependencies, no build tooling,
-and no server-side component — it is served as-is by GitHub Pages.
+and no server-side component — it is served as-is by GitHub Pages. The one
+exception is the Media Cell admin page (`/admin/`), which loads Sveltia CMS
+from a CDN — see "Events data and the Media Cell admin" below.
 
 Four standalone legal pages (`privacy.html`, `terms.html`,
 `refund-policy.html`, `tax-exemption.html`) live alongside it — see
@@ -52,14 +54,16 @@ and often an `id` used as a nav-anchor target:
   `data/schedule.json` by `js/schedule.js`/`js/countdown.js`
 - `.live-now#live` — "Watch live now" platform cards (YouTube, Facebook,
   Instagram, Google Meet)
-- `.upcoming-events#events` — announcements for future campaigns/events,
-  each an `.event-card` with an image, description, and date/location
-  meta line; currently seeded with the "Thaila Kranti" jute bag campaign
+- `.upcoming-events#events` — two parts: an "Upcoming Events" block
+  (`#upcomingBlock`, hidden unless `data/events.json` has an event dated
+  today or later) and, below it, the hand-written "Recent campaigns"
+  `.event-card` for the "Thaila Kranti" campaign
 - `#gallery` — photo gallery (still placeholder tiles; see
   `PENDING_WORK.md`)
 - `.event-photos#event-photos` — real photos from the Foundation's
   functions/felicitation events, as an `.event-photo-grid` of captioned
-  `<figure>` tiles sourced from `assets/events/`; kept separate from
+  `<figure>` tiles sourced from `assets/events/` and rendered from
+  `data/events.json` by `js/events.js`; kept separate from
   `#gallery` because the available photos are event/felicitation shots
   rather than the classroom/skills photography `#gallery` is captioned for;
   the grid uses `grid-auto-flow:dense` so tall/short tiles leave no gaps
@@ -199,9 +203,61 @@ card, the "Thaila Kranti" jute-bag distribution campaign (15th August,
 office premises, Haridwar). Not in the top nav, same reasoning as
 Schedule/Live Now.
 
+## Events data and the Media Cell admin
+
+Events and their photos are data-driven so the Media Cell can update them
+without touching HTML. Setup and go-live steps are in `README.md`
+("Media Cell admin").
+
+- `data/events.json` — one array of event objects: `title_hi`, `title_en`,
+  `date` (`YYYY-MM-DD`), `location_hi`, `location_en`, `photo` (a
+  root-relative path such as `/assets/events/x.webp`), `caption_hi`,
+  `caption_en`. The 20 photos that were hand-written in `index.html` were
+  moved here with an empty `date`, their figcaption as the title and their
+  `alt` text as `caption_en`.
+- `js/events.js` — fetches the file and splits the events by date, using
+  the current calendar date in India (IST):
+  - **Dated today or later** → an `.event-card` in `#upcomingList`, soonest
+    first: photo (optional), title (`hi` + `en-line`), caption (`hi` +
+    `en-line`), and an `.event-meta` line with date and location (`hi` +
+    `en-mini`). `#upcomingBlock` is un-hidden only when there is at least
+    one.
+  - **Past or undated, with a photo** → an `.event-photo` tile in
+    `#eventPhotoGrid`, newest first, undated ones after in file order. The
+    tile shows the title only (`hi` + `en-mini`), as the hand-written tiles
+    did; `caption_en` becomes the image's `alt`. Date, location and caption
+    are not shown on a tile. A past event without a photo is not shown.
+  - All text is HTML-escaped before it is inserted.
+  - Tall tiles: every 4th tile (`:nth-child(4n+1)`) spans two rows on
+    desktop. A photo wider than about 1.45:1 gets the class `wide`, which
+    keeps it in a single row so its sides are not cropped (this replaces the
+    old `:nth-child(17)` rule for the Holi Milan plaque photo, which no
+    longer works once the order is dynamic).
+- The 20 `<figure>` tiles still in `index.html` are only a fallback for
+  `file://` preview and no-JS visitors, like the two hardcoded schedule
+  rows; `js/events.js` replaces them once the fetch succeeds. They are not
+  kept in sync with the data file.
+- `admin/index.html` + `admin/config.yml` — [Sveltia CMS](https://sveltiacms.app)
+  with the GitHub backend, loaded from unpkg (unversioned, as Sveltia
+  recommends). The events are a *single-file collection*: each event is its
+  own entry in the admin, but all are stored in the one JSON array.
+  Publishing is direct (no editorial workflow; Sveltia does not support it
+  for single-file collections anyway). Login goes through the Sveltia CMS
+  Authenticator, a Cloudflare Worker paired with a GitHub App installed on
+  this repository only.
+- Photos: Sveltia converts each upload to WebP at no more than 1600 px
+  (quality 75) in the browser and stores it in `assets/events/`.
+  `.github/workflows/compress-photos.yml` runs on any push that touches
+  `assets/events/` and, through `.github/scripts/compress_images.py`
+  (Pillow), recompresses in place any JPEG/PNG/WebP still over 200 KB,
+  keeping its name and format, then commits the result.
+- `admin/guide.html` — the Media Cell's one-page Hindi/English guide.
+
 ## Assets
 
 - `index.html` — the main single-page site
+- `data/events.json`, `js/events.js`, `admin/`, `.github/` — see "Events
+  data and the Media Cell admin" above
 - `team.html` — office bearers page
 - `resources.html` — learning-materials library page
 - `data/schedule.json` — weekly class schedule data (see "Weekly schedule"
@@ -268,4 +324,6 @@ expected and not a bug.
   Let's Encrypt certificate — the site force-redirects to
   `https://vasudhaivnidam.org`
 
-There is no CI pipeline — every push to `main` is live within moments.
+There is no build pipeline — every push to `main` is live within moments.
+The only GitHub Action is `compress-photos.yml` (see "Events data and the
+Media Cell admin").

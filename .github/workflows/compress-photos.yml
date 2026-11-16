@@ -1,0 +1,46 @@
+# Backstop for photos uploaded through the Media Cell admin (/admin).
+# Sveltia CMS shrinks photos before upload; if one over 200 KB still lands in
+# assets/events/, this recompresses it in place and commits the result.
+name: Compress oversized photos
+
+on:
+  push:
+    paths:
+      - 'assets/events/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compress-photos-${{ github.ref }}
+
+jobs:
+  compress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow
+        run: pip install "pillow>=11,<13"
+
+      - name: Compress photos over 200 KB
+        run: python .github/scripts/compress_images.py assets/events
+
+      - name: Commit compressed photos
+        run: |
+          if git diff --quiet -- assets/events; then
+            echo "Nothing to compress."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/events
+          git commit -m "Compress event photos over 200 KB"
+          # The admin may have saved again in the meantime; replay on top of it.
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

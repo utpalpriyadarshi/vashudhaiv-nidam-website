@@ -1,6 +1,21 @@
 # Making the website editable by the Media Cell — options
 
-Status: **for review / decision** (12 Nov 2026). No code has been changed.
+Status: **decided** (16 Nov 2026). Prototype is on the `feature/sveltia-cms`
+branch; see `README.md`, "Media Cell admin".
+
+Decisions:
+
+1. Option A, using **Sveltia CMS** instead of Decap (same config format,
+   built-in WebP image optimisation, better mobile support).
+2. Event and photo content publishes directly from the admin, with no
+   editorial workflow. Code, layout and config changes still need the
+   owner's review.
+3. Editors: 1–2 Media Cell people, each with their own GitHub account as a
+   collaborator.
+4. First sections: Functions & Events and Upcoming Events. Gallery and Team
+   later.
+
+The rest of this document is the original options write-up of 12 Nov 2026.
 
 ## Goal
 
