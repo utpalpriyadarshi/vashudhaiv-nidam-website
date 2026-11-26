@@ -118,7 +118,7 @@ for how they're built.
   Roorkee and Mauritius; captions kept generic on venue/date).
   Above those, an `.event-feature` block highlights the latest event (currently
   the 24 Nov 2026 Antarang meeting) with a bilingual write-up, news links and
-  its own 8-photo grid (`assets/events/antarang-*.jpg`, from
+  its own 9-photo grid (3 columns) (`assets/events/antarang-*.jpg`, from
   `reference-material/Photo241126/`).
 
 ## Contributing to copy

@@ -10,7 +10,7 @@ All notable changes to this project are documented here.
   College of Nursing, Rohalki Kishanpur, Bahadrabad, Haridwar) at the top of
   the "Functions & Events" section: bilingual summary, date/venue line,
   links to the two local news reports (Sakshar Haridwar, Hindustan Darshan),
-  and 8 photos chosen from the 88 in `reference-material/Photo241126/`
+  and 9 photos chosen from the 88 in `reference-material/Photo241126/`
   (near-duplicates of the same felicitation left out; resized to 1000px,
   under 140KB each). Older photos now sit under an "अन्य आयोजन / Other
   Events" sub-heading. Facts come from the organisation's WhatsApp notices
