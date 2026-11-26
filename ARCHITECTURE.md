@@ -62,7 +62,12 @@ and often an `id` used as a nav-anchor target:
   `<figure>` tiles sourced from `assets/events/`; kept separate from
   `#gallery` because the available photos are event/felicitation shots
   rather than the classroom/skills photography `#gallery` is captioned for;
-  the grid uses `grid-auto-flow:dense` so tall/short tiles leave no gaps
+  the grid uses `grid-auto-flow:dense` so tall/short tiles leave no gaps.
+  A featured event can sit above the grid as an `.event-feature` card
+  (title, `.event-meta` date/venue, `hi`/`en-line` paragraphs, `.event-news`
+  links) followed by its own `.event-photo-grid.event-feature-grid` (uniform
+  tiles, no tall spans); the older photos follow under an "Other Events"
+  sub-heading
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
 

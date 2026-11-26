@@ -5,6 +5,17 @@ All notable changes to this project are documented here.
 ## [Unreleased]
 
 ### Added
+- 26 Nov 2026: Added a featured write-up for the "अंतरंग बैठक एवं सम्मान
+  समारोह / Antarang Meeting & Felicitation Ceremony" (24 Nov 2026, Care
+  College of Nursing, Rohalki Kishanpur, Bahadrabad, Haridwar) at the top of
+  the "Functions & Events" section: bilingual summary, date/venue line,
+  links to the two local news reports (Sakshar Haridwar, Hindustan Darshan),
+  and 8 photos chosen from the 88 in `reference-material/Photo241126/`
+  (near-duplicates of the same felicitation left out; resized to 1000px,
+  under 140KB each). Older photos now sit under an "अन्य आयोजन / Other
+  Events" sub-heading. Facts come from the organisation's WhatsApp notices
+  and the two news articles; photo captions stay generic because the
+  people in each photo aren't identified.
 - Added 12 more photos (20 total) to the "Functions & Events" section from
   `reference-material/121126/`: Sneh Sammelan felicitations, Environment Holi
   Milan plaque presentations, group photos, a studio interview and a meeting
