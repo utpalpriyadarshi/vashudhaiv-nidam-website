@@ -121,6 +121,10 @@ for how they're built.
   `PENDING_WORK.md` item 8. The 12 added on 12 Nov 2026 come from
   `reference-material/121126/` (several events at several places, e.g.
   Roorkee and Mauritius; captions kept generic on venue/date).
+  Above those, an `.event-feature` block highlights the latest event (currently
+  the 24 Nov 2026 Antarang meeting) with a bilingual write-up, news links and
+  its own 9-photo grid (3 columns) (`assets/events/antarang-*.jpg`, from
+  `reference-material/Photo241126/`).
 
 ## Media Cell admin (Sveltia CMS)
 

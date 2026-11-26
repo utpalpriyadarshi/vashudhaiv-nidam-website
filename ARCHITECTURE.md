@@ -66,7 +66,12 @@ and often an `id` used as a nav-anchor target:
   `data/events.json` by `js/events.js`; kept separate from
   `#gallery` because the available photos are event/felicitation shots
   rather than the classroom/skills photography `#gallery` is captioned for;
-  the grid uses `grid-auto-flow:dense` so tall/short tiles leave no gaps
+  the grid uses `grid-auto-flow:dense` so tall/short tiles leave no gaps.
+  A featured event can sit above the grid as an `.event-feature` card
+  (title, `.event-meta` date/venue, `hi`/`en-line` paragraphs, `.event-news`
+  links) followed by its own `.event-photo-grid.event-feature-grid` (uniform
+  tiles, no tall spans); the older photos follow under an "Other Events"
+  sub-heading
 - `.transparency` — transparency/accountability info
 - `.contact#contact` — contact form and donation info
 
@@ -233,6 +238,12 @@ without touching HTML. Setup and go-live steps are in `README.md`
     keeps it in a single row so its sides are not cropped (this replaces the
     old `:nth-child(17)` rule for the Holi Milan plaque photo, which no
     longer works once the order is dynamic).
+  - Not CMS-managed: the `.event-feature` card above the grid (currently the
+    24 Nov 2026 Antarang meeting) and its `.event-feature-grid` photos are
+    hand-written in `index.html`. `js/events.js` only replaces
+    `#eventPhotoGrid` (the "Other Events" grid), so those photos are not in
+    `data/events.json`. Changing the featured event still goes through the
+    branch-and-review flow.
 - The 20 `<figure>` tiles still in `index.html` are only a fallback for
   `file://` preview and no-JS visitors, like the two hardcoded schedule
   rows; `js/events.js` replaces them once the fetch succeeds. They are not
